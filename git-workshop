@@ -32,14 +32,14 @@ introduce and practice basic commands:
 ** clone the test repository from the server
 
 * git init 
-** setup a blank repository
+** set up a blank repository
 
 git status
 ** check whats in working treee and index
 
 * git add
-** add stuff to the index
-** remove stuff from the index
+** add data to the index
+** remove data from the index
 ** check contents of index
 
 * git commmit
@@ -47,18 +47,18 @@ git status
 
 * git log
 ** inspect the log
-** try a couple of formats
+** show log in a couple of formats
 
 * git diff
-** chanages in working tree
-** changes in index
-** changes between commits
+** show changes in working tree
+** show changes in index
+** show changes between commits
 
 * git tag
 ** make a tag
 
 * git reset (--hard and --soft)
-** remove stuff from index
+** remove data from index
 ** move changes from commit to index/working tree
 
 * relative ids
@@ -66,7 +66,6 @@ git status
 ** HEAD~
 
 introduce and practice advanced commands:
-
 * git revert
 * git branch
 * git checkout
@@ -74,8 +73,7 @@ introduce and practice advanced commands:
 * git rebase
 * git cherry-pick
 
-introduce and practice remote commands
-
+introduce and practice remote commands:
 * git fetch
 * git push
 ** basic pushing
@@ -114,7 +112,8 @@ server services:
 * gitosis, git-web, gitdaemon, installed (for synchronizing users)
 *  up and running
 
-make a test repository available, this should contain, a worksheet
+* make a test repository available
+* prepare a printout of a worksheet
 
 = People =
 * Sven Guckes - learning the basics through this workshop
