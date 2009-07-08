@@ -1,0 +1,75 @@
+Motivation
+------------------------------
+
+Familiarize with git commands
+Basic ideas should be 
+Commands to be executed and see what happens
+Understand what happens when i execute a command
+
+Goal:
+    know and understand basic commands
+    be able to interact with other repositories
+    understand neccessary steps to contribute to and OSS proj
+
+
+
+Plan
+------------------------------
+
+setup:
+
+    git config
+        name
+        email
+        colors
+
+introduce and practice basic commands:
+
+    git clone
+    git init 
+    git add
+    git commmit
+    git log
+    git diff
+    git tag
+
+introduce and practice advanced commands:
+
+    git reset (--hard and --soft)
+    git revert
+    git branch
+    git checkout
+    git merge
+    git rebase
+    git cherry-pick
+
+introduce and practice remote commands
+
+    git fetch
+    git push
+    git pull
+    git format-patch
+    git send-email
+    git am
+
+show cool stuff
+
+    git add -p
+    git rebase -i
+    git stash
+    zsh vcs_info (grml-zsh setup)
+
+Requirements:
+------------------------------
+Participants:
+    laptop (linux bsd or solaris install, maybe mac)
+    recent git (1.6 oslt)
+    ssh-key (for interacting with server)
+    irc-client (and know how to use it)
+
+Organizers:
+    publicly routable server, or only within the network (permanent is better)
+    gitosis, git-web, gitdaemon, installed (for synchronizing users)
+    ssh up and running
+
+
