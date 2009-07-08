@@ -29,16 +29,44 @@ Basic Setup:
 introduce and practice basic commands:
 
 * git clone
+** clone the test repository from the server
+
 * git init 
+** setup a blank repository
+
+git status
+** check whats in working treee and index
+
 * git add
+** add stuff to the index
+** remove stuff from the index
+** check contents of index
+
 * git commmit
+** make a commit
+
 * git log
+** inspect the log
+** try a couple of formats
+
 * git diff
+** chanages in working tree
+** changes in index
+** changes between commits
+
 * git tag
+** make a tag
+
+* git reset (--hard and --soft)
+** remove stuff from index
+** move changes from commit to index/working tree
+
+* relative ids
+** HEAD^
+** HEAD~
 
 introduce and practice advanced commands:
 
-* git reset (--hard and --soft)
 * git revert
 * git branch
 * git checkout
@@ -50,6 +78,10 @@ introduce and practice remote commands
 
 * git fetch
 * git push
+** basic pushing
+** push branches
+** push tags
+
 * git pull
 * git format-patch
 * git send-email
@@ -81,6 +113,8 @@ Miscellaneous:
 server services:
 * gitosis, git-web, gitdaemon, installed (for synchronizing users)
 *  up and running
+
+make a test repository available, this should contain, a worksheet
 
 = People =
 * Sven Guckes - learning the basics through this workshop
