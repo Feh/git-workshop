@@ -65,6 +65,13 @@ git status
 ** HEAD^
 ** HEAD~
 
+maybe we should introduce possible workflows here
+* local vs remote
+* single repo, multiple branches for each dev
+* multiple repos, devs pull off each other
+* send patches via email, commiters review and commit
+* any combination of the above
+
 introduce and practice advanced commands:
 * git revert
 * git branch
