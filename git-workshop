@@ -92,6 +92,12 @@ introduce and practice remote commands:
 * git send-email
 * git am
 
+setup repository for sharing on local machine
+* git --bare init --shared
+** this is the quasi equivalent of svnadmin create
+** --bare so that its possible to push to
+** --shared
+
 Miscellaneous:
 * git add -p
 * git rebase -i
