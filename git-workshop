@@ -31,7 +31,7 @@ introduce and practice basic commands:
 * git clone
 ** clone the test repository from the server
 
-* git init 
+* git init
 ** set up a blank repository
 
 git status
