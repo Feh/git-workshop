@@ -31,7 +31,7 @@ introduce and practice basic commands:
 * git clone
 ** clone the test repository from the server
 
-* git init 
+* git init
 ** set up a blank repository
 
 git status
@@ -65,6 +65,13 @@ git status
 ** HEAD^
 ** HEAD~
 
+maybe we should introduce possible workflows here
+* local vs remote
+* single repo, multiple branches for each dev
+* multiple repos, devs pull off each other
+* send patches via email, commiters review and commit
+* any combination of the above
+
 introduce and practice advanced commands:
 * git revert
 * git branch
@@ -84,6 +91,12 @@ introduce and practice remote commands:
 * git format-patch
 * git send-email
 * git am
+
+setup repository for sharing on local machine
+* git --bare init --shared
+** this is the quasi equivalent of svnadmin create
+** --bare so that its possible to push to
+** --shared
 
 Miscellaneous:
 * git add -p
