@@ -1,0 +1,52 @@
+* Werbung machen
+  Auf der Webseite, im Blog, etc.; ich würde auch den Menschen, der den
+  Git-Vortrag macht mal fragen, ob er auf unseren Workshop hinweisen will.
+
+* Folien
+  Wir werden hoffentlich zwei Beamer haben, können also mehrere Folien mit
+  wichtigen Kommandos etc. vorbereiten, am besten per LaTeX-beamer oder so.
+  (Ideensammlung bald, Umsetzung später. Dazu können wir gut die Datei
+  git-workshop verwenden.)
+
+* Workflow
+  Was für einen Workflow wollen wir den Leuten vorstellen?
+  Ich habe mir vorhin Gedanken gemacht und glaube, dass wir das "Pull from
+  Me"-Prinzip vorstellen sollten, aus mehreren Gründen:
+
+    i)   Es zeigt deutlich die Unterschiede zu herkömmlichen VCS auf.
+    ii)  Es betont und führt in die *Verteiltheit* von git ein.
+    iii) Mit diesem Ansatz arbeiten viele Projekte, so kann man schnell in die
+         Entwicklung einsteigen (und dazu sollten wir die Leute ermutigen: Typo
+         in der Manpage? -> Repo klonen, korrigieren, und Pull Request schicken!)
+    iv)  Wir haben genau diese Situation: Ein Raum voller "Entwickler" und zwei
+         "Project Leader", die darüber entscheiden, was rein kommt (und die das
+         Master-Repo verwalten).
+
+* Infrastruktur überlegen
+  Sofern wir obigen Workflow praktizieren, habe ich mir folgendes überlegt:
+  Wir lassen die Leute Namensschilder aufstellen vor sich (oder auf dem
+  Monitor) mit ihrem Vornamen und haben einen zentralen Server (grml-Kiste?)
+  auf dem wir den Leuten alle einen Account geben.
+  Und dann könnte man statt einer Mailingliste einfach das so machen, dass man
+  sagt, "so, jetzt ist zehn Minuten Zeit zum was entwickeln", und wenn jemand
+  was fertig gemacht hat, dann kommt ein verbaler Pull-Request, und wir fetchen
+  das live auf dem Beamer und wenn es keine Konflikte gibt, wird es direkt in
+  den Master gemergt. Ich stelle mir das so vor:
+
+    Bernd: "Ich habe mal ein paar Zeilen zu `git stash' geschrieben. Pull, please!"
+    Wir: "Oh, cool, danke. Wo denn?"
+    Bernd: "bernd/git-stash"
+    Wir: >klacker<  git fetch bernd/git-stash
+                    git diff ..FETCH_HEAD
+                    git merge remotes/bernd/git-stash
+                      fail: "Bernd, bring mal den Konflikt in Ordnung" -> git reset --hard
+    Wir: "Dankeschön, Bernd!"
+
+* Default Config
+  Wir sollten ein wenig Config-Zeug vorbereiten. Wir können das auf der Folie
+  hinschreiben mit git config user.email etc., sollten den Leuten aber auch
+  eine vorgefertigte Textdatei mit wichtigen Config-Kommandos geben, die sie
+  einfach in eine Shell pasten können.
+  Zusätzlich wäre natürlich ein bisschen Shell-Scripting gut, um ein bisschen
+  branch-info im Prompt oder so anzuzeigen für Bash und Zsh. Das ist aber eher
+  nachrangig wichtig.
