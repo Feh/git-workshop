@@ -2,11 +2,23 @@
   Auf der Webseite, im Blog, etc.; ich würde auch den Menschen, der den
   Git-Vortrag macht mal fragen, ob er auf unseren Workshop hinweisen will.
 
+# Gute idee, wobei der im Kernel Track stattfinden soll. Evtl ist das nicht
+# unser Zielpublikum.
+
 * Folien
   Wir werden hoffentlich zwei Beamer haben, können also mehrere Folien mit
   wichtigen Kommandos etc. vorbereiten, am besten per LaTeX-beamer oder so.
   (Ideensammlung bald, Umsetzung später. Dazu können wir gut die Datei
   git-workshop verwenden.)
+
+# Es wird wichtig sein sich zu überlegen in welchen Reinfolge wir die Kommandos,
+# und Konzepte vorstellen wollen. In meiner Erfahrung gibt es bei git immer das
+# Henne-Ei Problem. 
+
+# Ausserdem würde ich dir für solche folien evtl wiki2beamer an Herz legen.
+# Evtl könnten wir mit ein bisschen Python aus dem wiki source code sowohl die
+# Folien als auch den cheat sheet erzeugen? Meinem Informatiker Gehirn schein
+# dieser Ansatz zu gefallen :-)))
 
 * Workflow
   Was für einen Workflow wollen wir den Leuten vorstellen?
@@ -21,6 +33,15 @@
     iv)  Wir haben genau diese Situation: Ein Raum voller "Entwickler" und zwei
          "Project Leader", die darüber entscheiden, was rein kommt (und die das
          Master-Repo verwalten).
+
+# Wollen wir trotzdem die anderen beiden workflows vorstellen, also 1-repo und
+# email-patches? Damit machen wir das Publikum darauf aufmerksam das git bei der
+# Gestaltung des workflow viele Freiheiten lässt, und sie sich aussuchen können
+# wie sie gerne arbeiten möchten. 
+
+# Ein Problem könnte sein, das bei diesem workflow, die Teilnehmer relativ viele
+# remotes hinzufügen müssten. Evtl, könnten wir auch ein Skript anbieten was das
+# automatisiert, je nach dem wie unsere Infrastruktur am Ende aussieht.
 
 * Infrastruktur überlegen
   Sofern wir obigen Workflow praktizieren, habe ich mir folgendes überlegt:
@@ -42,6 +63,33 @@
                       fail: "Bernd, bring mal den Konflikt in Ordnung" -> git reset --hard
     Wir: "Dankeschön, Bernd!"
 
+# Das klingt prinzipiell schonmal nicht schlecht. Ich bin mir aber noch nicht im
+# Klaren wie die konfiguration konkret aussehen soll.
+
+# Bei einer grml Kiste ist das Problem, das es sich hier um ein live System
+# handelt und es beim Neustart nackt ist. Ausser wir basteln uns da was, z.B. ne
+# custom grml wo alle unsere User und ihre repositories bereits angelegt wurden.
+# Das wäre ziemlich cool! Da würde auch nen Absturz überleben, Kiste neu
+# gestartet, einmal pushen, fertig!
+
+# Eine möglichkeit wäre sicherlich mit gitosis zu arbeiten. Kennst du das? Damit
+# könnten wir einfach drum bitten, das die Teilnehmer uns nen ssh-key
+# zuschicken, oder aber ssh-keys für die Teilnehmer generieren, und diese
+# verschicken. Wenn du es noch nicht kennst schau dir das mal an, das ist
+# ziemlich cool. Oder hattest du vor das alle gleichzeitig auf einer Kiste
+# arbeiten, und gegenseitig pullen? Habe ich das missverstanden? Ich denke ein
+# Diagram wäre nicht schlecht. 
+
+# Was für eine Kiste wollen wir da nehmen? Meinst du wir können uns vor Ort
+# was geben lassen? Sollen wir die registrieren lassen und beim DNS anmelden?
+# Dann müssten die Teilnehmer nicht mit IPs rumhantieren. 
+#
+# clone bernd@git-workshop/repos/bernd
+
+
+# Ich denke das Thema 'setup vor Ort' braucht noch am meisten Überlegung und
+# Arbeit. 
+
 * Default Config
   Wir sollten ein wenig Config-Zeug vorbereiten. Wir können das auf der Folie
   hinschreiben mit git config user.email etc., sollten den Leuten aber auch
@@ -50,3 +98,7 @@
   Zusätzlich wäre natürlich ein bisschen Shell-Scripting gut, um ein bisschen
   branch-info im Prompt oder so anzuzeigen für Bash und Zsh. Das ist aber eher
   nachrangig wichtig.
+
+# Cheat sheet in text form ist auf jeden Fall super. Wir sollte drauf achten das
+# es nicht zuviel Information enthält, aber trotzdem alle essentiellen Kommandos
+# auflistet. 
