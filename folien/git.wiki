@@ -1,0 +1,19 @@
+<[autotemplate]
+documentclass={beamer}
+usecolortheme={default}
+
+usepackage=[utf8]{inputenc}
+usepackage={graphicx}
+
+title={Git-Workshop}
+subtitle={Chemnitzer Linuxtage 2010}
+author={Valentin Hänel, Julius Plenz}
+date={13. März 2010}
+[autotemplate]>
+
+== Erste Kommandos ==
+
+==== Repositories erstellen ====
+
+* @git clone@ ''URL''
+* @git init [-{}-bare]@
