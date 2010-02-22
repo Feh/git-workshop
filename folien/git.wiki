@@ -112,3 +112,17 @@ Fast-Forward Merge:
 ** Daher: Nur Unveröffentlichtes gegen Veröffentlichtes rebasen:
 *** @git rebase origin/master@
 *** @git rebase v1.1.23@
+
+==== Hilfe, Konflikte! ====
+
+Bei @merge@ und @rebase@ kann es zu Konflikten kommen. Wie geht man damit um?
+* @git mergetool@
+* @git add ''konfliktdateien''@
+* @git commit -m "''Merge-Konflikt behoben''"@
+* ggf. @git rebase -{}-continue@
+
+Das Unterfangen abbrechen:
+* @git reset HEAD@, oder
+* @git rebase -{}-abort@
+
+TODO: rerere erwähnen bzw. vorführen!
