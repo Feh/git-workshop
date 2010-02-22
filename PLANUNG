@@ -4,6 +4,10 @@
 
 # Gute idee, wobei der im Kernel Track stattfinden soll. Evtl ist das nicht
 # unser Zielpublikum.
+#
+#   Das würde ich gar nicht mal so sagen - da gehen sicherlich auch mal
+#   Hardware-Hacker hin, die ein bisschen git lernen wollen. Schaden
+#   kann's nicht!
 
 * Folien
   Wir werden hoffentlich zwei Beamer haben, können also mehrere Folien mit
@@ -13,12 +17,23 @@
 
 # Es wird wichtig sein sich zu überlegen in welchen Reinfolge wir die Kommandos,
 # und Konzepte vorstellen wollen. In meiner Erfahrung gibt es bei git immer das
-# Henne-Ei Problem. 
+# Henne-Ei Problem.
+#
+#   Ja, das lass uns morgen mal in Ruhe diskutieren. Ich würde mal als
+#   grobe Roadmap aufstellen:
+#       i) clone/init
+#       ii) commit
+#       iii) branches
+#       iv) remotes (fetch, pull)
+#       v) merge & rebase
+#   Was meinst Du dazu?
 
 # Ausserdem würde ich dir für solche folien evtl wiki2beamer an Herz legen.
 # Evtl könnten wir mit ein bisschen Python aus dem wiki source code sowohl die
 # Folien als auch den cheat sheet erzeugen? Meinem Informatiker Gehirn schein
 # dieser Ansatz zu gefallen :-)))
+#
+#   Keine Ahnung... aber ich schau es mir heute mal an. :-)
 
 * Workflow
   Was für einen Workflow wollen wir den Leuten vorstellen?
@@ -38,10 +53,20 @@
 # email-patches? Damit machen wir das Publikum darauf aufmerksam das git bei der
 # Gestaltung des workflow viele Freiheiten lässt, und sie sich aussuchen können
 # wie sie gerne arbeiten möchten. 
+#
+#   Ja, definitiv! Ich glaube aber, dass, wenn man an einem Projekt
+#   ein bisschen mitarbeiten will, man mit diesem Workflow am
+#   schnellsten weiter kommt. Aber wir sollten definitiv die anderen
+#   beiden Workflows vorstellen!
 
 # Ein Problem könnte sein, das bei diesem workflow, die Teilnehmer relativ viele
 # remotes hinzufügen müssten. Evtl, könnten wir auch ein Skript anbieten was das
 # automatisiert, je nach dem wie unsere Infrastruktur am Ende aussieht.
+#
+#   Jein - wir müssten jeden Contributor als Remote hinzufügen, aber
+#   die Leute eigentlich nur uns. (Oder ggf. die Leute neben ihnen
+#   wenn die was zusammen machen.) Also liegt die Arbeit nur ein wenig
+#   bei uns.
 
 * Infrastruktur überlegen
   Sofern wir obigen Workflow praktizieren, habe ich mir folgendes überlegt:
@@ -71,6 +96,10 @@
 # custom grml wo alle unsere User und ihre repositories bereits angelegt wurden.
 # Das wäre ziemlich cool! Da würde auch nen Absturz überleben, Kiste neu
 # gestartet, einmal pushen, fertig!
+#
+#   Ich kann meinen Zweit-Laptop mit anderer Platte mitbringen, dann
+#   können wir da ein frisches System drauf installieren. (Kann ich
+#   auch noch zu Hause machen.)
 
 # Eine möglichkeit wäre sicherlich mit gitosis zu arbeiten. Kennst du das? Damit
 # könnten wir einfach drum bitten, das die Teilnehmer uns nen ssh-key
@@ -79,12 +108,19 @@
 # ziemlich cool. Oder hattest du vor das alle gleichzeitig auf einer Kiste
 # arbeiten, und gegenseitig pullen? Habe ich das missverstanden? Ich denke ein
 # Diagram wäre nicht schlecht. 
+#
+#   Lass uns auch das morgen im Detail besprechen, aber ich schaue mir
+#   gitosis an. Können wir ja auf der Kiste installieren.
 
 # Was für eine Kiste wollen wir da nehmen? Meinst du wir können uns vor Ort
 # was geben lassen? Sollen wir die registrieren lassen und beim DNS anmelden?
 # Dann müssten die Teilnehmer nicht mit IPs rumhantieren. 
 #
 # clone bernd@git-workshop/repos/bernd
+#
+#   Gute Idee; sollten wir aber lieber privat organisieren, "less
+#   hustle". Wir können uns um eine Fixip kümmern und dann nen eigenen
+#   DNS-Eintrag auf diesen Rechner erstellen.
 
 
 # Ich denke das Thema 'setup vor Ort' braucht noch am meisten Überlegung und
@@ -102,3 +138,5 @@
 # Cheat sheet in text form ist auf jeden Fall super. Wir sollte drauf achten das
 # es nicht zuviel Information enthält, aber trotzdem alle essentiellen Kommandos
 # auflistet. 
+#
+#   Es gibt ja auch schon genug Beispiele online, denke ich mal.
