@@ -64,3 +64,27 @@ date={13. März 2010}
 ** @gitk@
 * ... oder textbasiert:
 ** @tig@
+
+==== Branches: Abzweigungen ====
+
+Branches ...
+* erstellen: @git branch ''name''@
+* auschecken: @git checkout ''name''@
+* erstellen und direkt auschecken: @git checkout -b ''name''@
+* auflisten: @git branch@
+
+Was genau sind Branches? -- Nichts anderes als Referenzen auf den jeweils
+obersten Commit einer Versionsgeschichte.
+
+==== Remote Repositories / Remote Branches ====
+
+Remote Repositories:
+* @git remote -v@
+* @git remote add ''ws-ro'' git.plenz.com:git-workshop@
+* @git remote update@
+
+Remote Branches auflisten:
+* @git branch -r@
+
+Schauen, »wie weit vorne« die anderen sind:
+* @git log ''ws-ro''/master..@
