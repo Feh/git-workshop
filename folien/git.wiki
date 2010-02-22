@@ -49,4 +49,18 @@ date={13. März 2010}
 # @git commit -m 'Makefile angepasst'@
 # @git show@
 
+==== Informationen über das Repository erhalten ====
 
+* Den jüngsten Commit im vollen Umfang anschauen:
+** @git show@
+
+* Die letzten fünf Commits anzeigen:
+** @git log HEAD\~{}5..@
+
+* Die gesamte Versionsgeschichte, die zum aktuellen Zustand führt, anzeigen:
+** @git log@
+
+* Das Repository visualisieren:
+** @gitk@
+* ... oder textbasiert:
+** @tig@
