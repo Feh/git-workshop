@@ -39,3 +39,14 @@ date={13. März 2010}
 * '''Commit''': Eine Änderung an einer oder mehrerer Dateien, versehen mit Metadaten wie Autor, Datum und Beschreibung
 * '''Referenz''': Jeder '''Commit''' wird durch eine eindeutige SHA1-Summe identifiziert. Eine Referenz »zeigt« auf einen bestimmten Commit
 * '''Branch''': Ein »Zweig«, eine Abzweigung im Entwicklungszyklus, z.\,B. um ein neues Feature einzuführen
+
+==== Ein typischer Arbeitsablauf ====
+
+* Eine @Makefile@ verändern, und die Änderungen in das Repository »einchecken«:
+# @vim Makefile@
+# @git status@
+# @git add Makefile@
+# @git commit -m 'Makefile angepasst'@
+# @git show@
+
+
