@@ -88,3 +88,27 @@ Remote Branches auflisten:
 
 Schauen, »wie weit vorne« die anderen sind:
 * @git log ''ws-ro''/master..@
+
+==== Merging: Branches Zusammenfügen ====
+
+Simple Merge:
+* @git merge ''neues-feature''@
+
+Octopus-Merge:
+* @git merge ''feature1'' ''feature2'' ''feature3''@
+
+Fast-Forward Merge:
+* Wird @''topic''@ in @''master''@ gemerget und @''topic''@ basiert auf @''master''@, dann wird kein Merge-Commit erstellt, sondern nur der Zeiger »weitergerückt«.
+
+==== Rebasing ====
+
+* '''Rebase''': Einen Branch auf eine »neue Basis« stellen:
+** @git rebase master ''topic''@
+
+* Interaktiv Commits neu ordnen, bearbeiten, zusammenfassen oder aufteilen:
+** @git rebase -i HEAD\~{}5@
+
+* '''Wichtig:''' Man darf '''''niemals''''' Commits aus einem bereits veröffentlichten Branch -- auf dem also womöglich Andere ihre Arbeit basieren -- durch @git rebase@ verändern!
+** Daher: Nur Unveröffentlichtes gegen Veröffentlichtes rebasen:
+*** @git rebase origin/master@
+*** @git rebase v1.1.23@
