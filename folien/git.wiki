@@ -3,6 +3,7 @@ documentclass={beamer}
 usecolortheme={default}
 
 usepackage=[utf8]{inputenc}
+usepackage=[T1]{fontenc}
 usepackage={graphicx}
 
 title={Git-Workshop}
@@ -18,6 +19,23 @@ date={13. März 2010}
 * Für alle Projekte (wird in @\~{}/.gitconfig@ gespeichert)
 ** @git config --global user.name "Max Mustermann"@
 ** \texttt{git config --global user.email max@mustermann.de}
+
 * ... oder alternativ nur für das aktuelle Projekt:
 ** \texttt{git config user.email maintainer@cool-project.org}
 
+==== Ein Projekt importieren oder erstellen ====
+
+* Um ein bestehendes Projekt zu importieren, »klont« man es mit seiner gesamten Versionsgeschichte:
+** \texttt{git clone git@git.plenz.com:\emph{git-workshop}}
+
+* Ein neues Projekt erstellt man wie folgt:
+** @mkdir ''projekt''@
+** @cd ''projekt''@
+** @git init@
+
+==== Begriffsbildung ====
+
+* '''Index'''/'''Staging Area''': Bereich zwischen dem Arbeitsverzeichnis und dem Repository, in die Änderungen für den nächsten '''Commit''' gesammelt werden
+* '''Commit''': Eine Änderung an einer oder mehrerer Dateien, versehen mit Metadaten wie Autor, Datum und Beschreibung
+* '''Referenz''': Jeder '''Commit''' wird durch eine eindeutige SHA1-Summe identifiziert. Eine Referenz »zeigt« auf einen bestimmten Commit
+* '''Branch''': Ein »Zweig«, eine Abzweigung im Entwicklungszyklus, z.\,B. um ein neues Feature einzuführen
