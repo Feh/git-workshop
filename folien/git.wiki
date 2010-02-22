@@ -89,6 +89,20 @@ Remote Branches auflisten:
 Schauen, »wie weit vorne« die anderen sind:
 * @git log ''ws-ro''/master..@
 
+==== Fremden Code holen, eigenen versenden ====
+
+Aus einem anderen Repository neuen Code »ziehen«:
+* @git pull ''remote'' ''branch''@
+** @git pull origin master@
+Was hinter den Kulissen passiert:
+# @git fetch ''remote'' ''branch''@
+# @git merge ''remote''/''branch''@
+
+--.5cm--
+Eigene Commits »pushen« oder per E-Mail senden:
+* @git push ''remote'' ''branch''@
+* @git format-patch ''seit-wann''@
+
 ==== Merging: Branches Zusammenfügen ====
 
 Simple Merge:
