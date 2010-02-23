@@ -1,0 +1,17 @@
+Hier werden sowohl die Kommandos beschrieben die wir vorführen wollen, und auch
+zusätzliche Beispiele die wir verwenden können.
+
+
+git log
+
+git log -N}                            & die letzten @N@ anzeigen\\ 
+git log COMMIT}                        & bis zu @COMMIT@ anzeigen \\ 
+git log -{-}since="23 hours"}          & alle seit ... \\ 
+git log -{-}before="42 days"}          & alle vor ... \\ 
+git log -{-}pretty=oneline}            & ein ''commit'' pro Zeile \\ 
+git log A..B}                          & alle zwischen {\tt A} und {\tt
+
+git branch
+
+git branch -a
+git branch -v
