@@ -53,8 +53,8 @@ Wer kennt oder hat schon mal eines der folgenden Systeme benutzt?
 * Eine @''datei''@ verändern, und die Änderungen in das Repository »einchecken«:
 # @vim ''datei''@
 # @git status@
-# @git add Makefile@
-# @git commit -m 'Makefile angepasst'@
+# @git add ''datei''@
+# @git commit -m '\emph{datei} angepasst'@
 # @git show@
 
 ==== Informationen über das Repository erhalten ====
