@@ -115,6 +115,20 @@ Fast-Forward Merge:
 *** @git rebase origin/master@
 *** @git rebase v1.1.23@
 
+==== Hilfe, Konflikte! ====
+
+Bei @merge@ und @rebase@ kann es zu Konflikten kommen. Wie geht man damit um?
+* @git mergetool@
+* @git add ''konfliktdateien''@
+* @git commit -m "''Merge-Konflikt behoben''"@
+* ggf. @git rebase -{}-continue@
+
+Das Unterfangen abbrechen:
+* @git reset HEAD@, oder
+* @git rebase -{}-abort@
+
+TODO: rerere erwähnen bzw. vorführen!
+
 ==== Remote Repositories / Remote Branches ====
 
 Remote Repositories:
@@ -141,17 +155,3 @@ Was hinter den Kulissen passiert:
 Eigene Commits »pushen« oder per E-Mail senden:
 * @git push ''remote'' ''branch''@
 * @git format-patch ''seit-wann''@
-
-==== Hilfe, Konflikte! ====
-
-Bei @merge@ und @rebase@ kann es zu Konflikten kommen. Wie geht man damit um?
-* @git mergetool@
-* @git add ''konfliktdateien''@
-* @git commit -m "''Merge-Konflikt behoben''"@
-* ggf. @git rebase -{}-continue@
-
-Das Unterfangen abbrechen:
-* @git reset HEAD@, oder
-* @git rebase -{}-abort@
-
-TODO: rerere erwähnen bzw. vorführen!
