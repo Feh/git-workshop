@@ -1,0 +1,15 @@
+Hier wird die 'Server' Infrastruktur für den zweiten Teil beschrieben.
+
+Wir werden den one-user-one-repository workflow verwenden, d.h.:
+
+Wir richten einen zentralen Server ein.
+Das ist der 'alte' Laptop von Julius, namens 'Deepthought'.
+Die Namensauflösung passiert via git.plenz.com.
+Auf diesem Rechner richten wir pro Teilnehmer einen Account ein.
+Diese Accounts haben die git-shell als login shell.
+Wir drucken die username/passwords aus und geben sie den Teilnehmern.
+Jeder Teilnehmer verfügt über ein git repository auf deepthought.
+Jedes user-repository wird via git daemon exportiert.
+So können die Teilnehmer kollaborieren.
+Ausserdem verfügen wir über ein 'blessed' repository wo wir die commits der
+Teilnehmer mergen.
