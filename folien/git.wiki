@@ -129,6 +129,16 @@ Das Unterfangen abbrechen:
 
 TODO: rerere erwähnen bzw. vorführen!
 
+==== Hinaus in die weite Welt! ====
+
+* Wir wollen unsere Arbeit mit der anderer Entwickler austauschen!
+* Durch die verteilte Architektur von @git@ braucht es keinen ''zentralen'' Server zu geben.
+* Das Entwicklerteam muss sich auf einen ''Workflow'' einigen:
+** Shared Repository
+** Maintainer/Blessed Repository
+** Patch-Queue per E-Mail
+** ... oder auch alles durcheinandergemixt.
+
 ==== Remote Repositories / Remote Branches ====
 
 Remote Repositories:
