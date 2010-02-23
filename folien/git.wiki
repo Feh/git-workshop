@@ -118,7 +118,7 @@ Fast-Forward Merge:
 ==== Hilfe, Konflikte! ====
 
 Bei @merge@ und @rebase@ kann es zu Konflikten kommen. Wie geht man damit um?
-* @git mergetool@
+* @vim ''konfliktdateien''@
 * @git add ''konfliktdateien''@
 * @git commit -m "''Merge-Konflikt behoben''"@
 * ggf. @git rebase -{}-continue@
