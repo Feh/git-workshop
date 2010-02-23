@@ -81,8 +81,12 @@ Branches ...
 * erstellen und direkt auschecken: @git checkout -b ''name''@
 * auflisten: @git branch@
 
+--.5cm--
 Was genau sind Branches? -- Nichts anderes als Referenzen auf den jeweils
 obersten Commit einer Versionsgeschichte.
+
+--.5cm--
+Idealisierter Workflow: Ein Branch pro neuem Feature oder Bugfix.
 
 ==== Merging: Branches Zusammenfügen ====
 
