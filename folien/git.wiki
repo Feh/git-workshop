@@ -94,11 +94,11 @@ Idealisierter Workflow: Ein Branch pro neuem Feature oder Bugfix.
 
 ==== Merging: Branches Zusammenfügen ====
 
-Fast-Forward Merge:
-* Wird @''topic''@ in @''master''@ gemerget und @''topic''@ basiert auf @''master''@, dann wird kein Merge-Commit erstellt, sondern nur der Zeiger »weitergerückt«.
-
 Simple Merge:
 * @git merge ''neues-feature''@
+
+Fast-Forward Merge:
+* Wird @''topic''@ in @''master''@ gemerget und @''topic''@ basiert auf @''master''@, dann wird kein Merge-Commit erstellt, sondern nur der Zeiger »weitergerückt«.
 
 ==== Remote Repositories / Remote Branches ====
 
