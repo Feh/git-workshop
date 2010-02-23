@@ -165,3 +165,11 @@ Was hinter den Kulissen passiert:
 Eigene Commits »pushen« oder per E-Mail senden:
 * @git push ''remote'' ''branch''@
 * @git format-patch ''seit-wann''@
+
+==== Kür: Was noch fehlt ====
+
+* Remote Branches löschen
+* @git stash@
+* Git-Aliase
+* Tags
+* Reflog
