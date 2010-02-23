@@ -25,8 +25,8 @@ Wer kennt oder hat schon mal eines der folgenden Systeme benutzt?
 ==== Wer bin ich? -- Name und E-Mail einstellen ====
 
 * Für alle Projekte (wird in @\~{}/.gitconfig@ gespeichert)
-** @git config --global user.name "Max Mustermann"@
-** \texttt{git config --global user.email max@mustermann.de}
+** @git config -{}-global user.name "Max Mustermann"@
+** \texttt{git config -{}-global user.email max@mustermann.de}
 
 * ... oder alternativ nur für das aktuelle Projekt:
 ** \texttt{git config user.email maintainer@cool-project.org}
