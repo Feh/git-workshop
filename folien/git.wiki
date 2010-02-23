@@ -84,6 +84,17 @@ Branches ...
 Was genau sind Branches? -- Nichts anderes als Referenzen auf den jeweils
 obersten Commit einer Versionsgeschichte.
 
+==== Merging: Branches Zusammenfügen ====
+
+Simple Merge:
+* @git merge ''neues-feature''@
+
+Octopus-Merge:
+* @git merge ''feature1'' ''feature2'' ''feature3''@
+
+Fast-Forward Merge:
+* Wird @''topic''@ in @''master''@ gemerget und @''topic''@ basiert auf @''master''@, dann wird kein Merge-Commit erstellt, sondern nur der Zeiger »weitergerückt«.
+
 ==== Remote Repositories / Remote Branches ====
 
 Remote Repositories:
@@ -110,17 +121,6 @@ Was hinter den Kulissen passiert:
 Eigene Commits »pushen« oder per E-Mail senden:
 * @git push ''remote'' ''branch''@
 * @git format-patch ''seit-wann''@
-
-==== Merging: Branches Zusammenfügen ====
-
-Simple Merge:
-* @git merge ''neues-feature''@
-
-Octopus-Merge:
-* @git merge ''feature1'' ''feature2'' ''feature3''@
-
-Fast-Forward Merge:
-* Wird @''topic''@ in @''master''@ gemerget und @''topic''@ basiert auf @''master''@, dann wird kein Merge-Commit erstellt, sondern nur der Zeiger »weitergerückt«.
 
 ==== Rebasing ====
 
