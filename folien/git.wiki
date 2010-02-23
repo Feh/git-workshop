@@ -62,11 +62,11 @@ Wer kennt oder hat schon mal eines der folgenden Systeme benutzt?
 * Den jüngsten Commit im vollen Umfang anschauen:
 ** @git show@
 
-* Die letzten fünf Commits anzeigen:
-** @git log HEAD\~{}5..@
-
 * Die gesamte Versionsgeschichte, die zum aktuellen Zustand führt, anzeigen:
 ** @git log@
+
+* Was hat sich verändert?
+** @git diff@
 
 * Das Repository visualisieren:
 ** @gitk@
