@@ -33,20 +33,20 @@ Wer kennt oder hat schon mal eines der folgenden Systeme benutzt?
 
 ==== Ein Projekt importieren oder erstellen ====
 
-* Um ein bestehendes Projekt zu importieren, »klont« man es mit seiner gesamten Versionsgeschichte:
-** \texttt{git clone git@git.plenz.com:\emph{git-workshop}}
-
 * Ein neues Projekt erstellt man wie folgt:
 ** @mkdir ''projekt''@
 ** @cd ''projekt''@
 ** @git init@
+
+* Um ein bestehendes Projekt zu importieren, »klont« man es mit seiner gesamten Versionsgeschichte:
+** \texttt{git clone git@git.plenz.com:\emph{git-workshop}}
 
 ==== Begriffsbildung ====
 
 * '''Index'''/'''Staging Area''': Bereich zwischen dem Arbeitsverzeichnis und dem Repository, in die Änderungen für den nächsten '''Commit''' gesammelt werden
 * '''Commit''': Eine Änderung an einer oder mehrerer Dateien, versehen mit Metadaten wie Autor, Datum und Beschreibung
 * '''Referenz''': Jeder '''Commit''' wird durch eine eindeutige SHA1-Summe identifiziert. Eine Referenz »zeigt« auf einen bestimmten Commit
-* '''Branch''': Ein »Zweig«, eine Abzweigung im Entwicklungszyklus, z.\,B. um ein neues Feature einzuführen
+* '''Branch''': Ein »Zweig«, eine Abzweigung im Entwicklungszyklus, z.\,B. um ein neues Feature einzuführen. Anfangs arbeiten wir im @master@.
 
 ==== Ein typischer Arbeitsablauf ====
 
@@ -90,14 +90,11 @@ Idealisierter Workflow: Ein Branch pro neuem Feature oder Bugfix.
 
 ==== Merging: Branches Zusammenfügen ====
 
-Simple Merge:
-* @git merge ''neues-feature''@
-
-Octopus-Merge:
-* @git merge ''feature1'' ''feature2'' ''feature3''@
-
 Fast-Forward Merge:
 * Wird @''topic''@ in @''master''@ gemerget und @''topic''@ basiert auf @''master''@, dann wird kein Merge-Commit erstellt, sondern nur der Zeiger »weitergerückt«.
+
+Simple Merge:
+* @git merge ''neues-feature''@
 
 ==== Remote Repositories / Remote Branches ====
 
