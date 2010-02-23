@@ -97,8 +97,10 @@ Idealisierter Workflow: Ein Branch pro neuem Feature oder Bugfix.
 Simple Merge:
 * @git merge ''neues-feature''@
 
+--.5cm--
+
 Fast-Forward Merge:
-* Wird @''topic''@ in @''master''@ gemerget und @''topic''@ basiert auf @''master''@, dann wird kein Merge-Commit erstellt, sondern nur der Zeiger »weitergerückt«.
+* Wird @''topic''@ in @''master''@ gemerget und @''topic''@ basiert auf @''master''@, dann wird kein Merge-Commit erstellt, sondern nur der Zeiger »weitergerückt«. [TODO: Bessere Formulierung!]
 
 ==== Remote Repositories / Remote Branches ====
 
