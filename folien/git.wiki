@@ -110,8 +110,8 @@ Fast-Forward Merge:
 * Interaktiv Commits neu ordnen, bearbeiten, zusammenfassen oder aufteilen:
 ** @git rebase -i HEAD\~{}5@
 
-* '''Wichtig:''' Man darf '''''niemals''''' Commits aus einem bereits veröffentlichten Branch -- auf dem also womöglich Andere ihre Arbeit basieren -- durch @git rebase@ verändern!
-** Daher: Nur Unveröffentlichtes gegen Veröffentlichtes rebasen:
+* _red_'''Wichtig:'''_ Man darf '''''niemals''''' Commits aus einem bereits veröffentlichten Branch -- auf dem also womöglich Andere ihre Arbeit basieren -- durch @git rebase@ verändern!
+** '''Daher: Nur Unveröffentlichtes gegen Veröffentlichtes rebasen:'''
 *** @git rebase origin/master@
 *** @git rebase v1.1.23@
 
