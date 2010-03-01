@@ -1,3 +1,6 @@
+Usage:
+    % sudo ./create-user.pl 40
+
 * Als Owner Repo als "origin" eintragen:
   git remote add origin ssh://tn01@git.plenz.com/repos/tn01
 * Readonly hinzufügen:
