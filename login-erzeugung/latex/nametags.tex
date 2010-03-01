@@ -1,0 +1,27 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,            % Schriftgröße {{{
+               a4paper,         % A4
+               oneside,         % Einseitig
+               DIV12,           % Papiergröße
+               halfparskip,     % Halbe Zeile Absatz statt Einzug
+              ]{scrartcl} %%% }}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Pakete {{{
+\usepackage[utf8]{inputenc}         % Umlaute etc.
+\usepackage[T1]{fontenc}            % T1-kodierte Fonts
+\usepackage{ae,aecompl}             % Kodierung für PDF
+\usepackage{ngerman}                % Deutsche Trennungen,
+%%% Layout
+\usepackage{scrpage2}               % KOMA-Überschriften und -Fußzeilen.
+%%% }}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\input{users.tex}
+
+\end{document}
+
+%%% vim:set fdm=marker:
