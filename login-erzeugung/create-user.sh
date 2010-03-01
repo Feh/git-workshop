@@ -11,5 +11,10 @@ for i in `seq -w 1 20`; do
     pass="`./mnemonic.pl`"
     useradd -c "Teilnehmer $i" -m -d /repos/tn$i --shell /usr/bin/git-shell $user
     echo "$user:$pass" | chpasswd
+    (cd latex; ./add-user.sh $user $pass)
     echo done.
 done
+
+echo -n "generating user/password cards..."
+(cd latex; pdflatex nametags; rm nametags.aux nametags.log ) >/dev/null
+echo done.
