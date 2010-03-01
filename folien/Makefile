@@ -1,10 +1,9 @@
-default:
-	make pdf
+default: pdf
 wiki2beamer:
 	wiki2beamer git.wiki > git.tex
-dvi:
-	make wiki2beamer
+dvi: wiki2beamer
 	latex git
-pdf:
-	make wiki2beamer
+pdf: wiki2beamer
 	pdflatex git
+clean:
+	git clean -fx
