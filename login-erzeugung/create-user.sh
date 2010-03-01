@@ -12,6 +12,8 @@ for i in `seq -w 1 20`; do
     useradd -c "Teilnehmer $i" -m -d /repos/tn$i --shell /usr/bin/git-shell $user
     echo "$user:$pass" | chpasswd
     (cd latex; ./add-user.sh $user $pass)
+    echo -n "initializing git repo ... "
+    (cd /repos/tn$i; git init --bare; chown -R tn${i}:tn$i .) >/dev/null
     echo done.
 done
 
