@@ -40,6 +40,9 @@ Wer hat schonmal ...
 * ... oder alternativ nur für das aktuelle Projekt:
 ** \texttt{git config user.email maintainer@cool-project.org}
 
+* Außerdem, für die, die wollen: Farbe!
+** @git config -{}-global color.ui auto@
+
 ==== Ein Projekt importieren oder erstellen ====
 
 * Ein neues Projekt erstellt man wie folgt:
