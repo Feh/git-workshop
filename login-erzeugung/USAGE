@@ -1,0 +1,6 @@
+* Als Owner Repo als "origin" eintragen:
+  git remote add origin ssh://tn01@git.plenz.com/repos/tn01
+* Readonly hinzufügen:
+  git clone git://git.plenz.com/tn01
+* Alle Git-Repos exportieren (Port 9418):
+  sudo git daemon --base-path=/repos --export-all /repos

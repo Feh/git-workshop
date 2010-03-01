@@ -9,7 +9,7 @@ for i in `seq -w 1 20`; do
     echo -n "creating user tn$i ... "
     user="tn$i"
     pass="`./mnemonic.pl`"
-    useradd -c "Teilnehmer $i" -m --shell /usr/bin/git-shell $user
+    useradd -c "Teilnehmer $i" -m -d /repos/tn$i --shell /usr/bin/git-shell $user
     echo "$user:$pass" | chpasswd
     echo done.
 done
