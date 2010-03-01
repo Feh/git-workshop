@@ -6,8 +6,10 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 for i in `seq -w 1 20`; do
+    echo -n "creating user tn$i ... "
     user="tn$i"
     pass="`./mnemonic.pl`"
-    adduser --shell /usr/bin/git-shell $user
+    useradd -c "Teilnehmer $i" -m --shell /usr/bin/git-shell $user
     echo "$user:$pass" | chpasswd
+    echo done.
 done
