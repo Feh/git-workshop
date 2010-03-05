@@ -38,6 +38,12 @@ TODO: hier nochmal config üben?
     git commit -m "erster commit"
     git show
 
+Extra - Mit einem leeren commit beginnen:
+
+    git init 
+    git commit --allow-empty -m "Zero"
+    git tag 0
+
 ==== Informationen ====
 
 Einfach:
@@ -190,7 +196,6 @@ Konflikt Marker zeigen und löschen.
 
     git branch -b remote-branch
     git push server remote-branch
-
 
 
 
