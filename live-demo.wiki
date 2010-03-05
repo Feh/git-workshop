@@ -1,14 +1,110 @@
 Hier werden sowohl die Kommandos beschrieben die wir vorführen wollen, und auch
 zusätzliche Beispiele die wir verwenden können.
 
+Wichtig: Font und background sollten die demo nicht behindern. Also werte
+Wachtmeister, bitte diese beiden gruppen beobachten.
+
+==== Namen und Email einstellen: ====
+
+Einsehen:
+
+git config --get user.name
+git config --get user.email
+
+Setzen:
+
+git config --global user.name Max Mustermann
+git config --get user.name
+
+Zurück:
+
+git config --global user.name Valentin Haenel
+git config --get user.name
+
+==== Projekt Erstellen ====
+
+mkdir git-workshop-demo
+cd git-workshop-demo
+git init
+
+TODO: hier nochmal config üben?
+
+==== Arbeitsablauf ====
+
+vim datei (one line)
+git status
+git add datei
+git status
+git commit -m "erster commit"
+git show
+
+==== Informationen ====
 
 git log
+gitk --all
+tig
 
-git log -N}                            & die letzten @N@ anzeigen\\ 
-git log COMMIT}                        & bis zu @COMMIT@ anzeigen \\ 
-git log -{-}since="23 hours"}          & alle seit ... \\ 
-git log -{-}before="42 days"}          & alle vor ... \\ 
-git log -{-}pretty=oneline}            & ein ''commit'' pro Zeile \\ 
+vim datei (next line)
+git diff
+git commit -a -m "eine Zeile hinzugefügt"
+
+git log
+gitk --all
+tig
+
+git log --pretty=oneline
+
+==== Branches ====
+
+git branch feature
+git branch
+git checkout feature
+vim datei
+git commit -a -m "commit im branch 'feature'"
+git checkout master
+vim datei
+git commit -a -m "commit im branch 'master'"
+gitk --all
+
+git branch fehler
+git branch -d fehler
+
+==== Merging  ====
+
+git config --global merge.summary true
+
+git merge feature
+
+(WICHTIG die Modifikationen müssen so passiert sein das KEIN Konflikt entsteht,
+evtl mit sed arbeiten?)
+
+gitk
+
+git checkout feature
+git merge master
+
+gitk
+
+==== Rebasing ====
+
+vim file
+git commit -a -m "zweiter commit im branch 'feature'"
+git checkout master
+vim file
+git commit -a -m "zweiter commit im branch 'master'"
+
+git rebase master feature
+
+gitk
+
+
+
+
+git log -N}                            & die letzten @N@ anzeigen\\
+git log COMMIT}                        & bis zu @COMMIT@ anzeigen \\
+git log -{-}since="23 hours"}          & alle seit ... \\
+git log -{-}before="42 days"}          & alle vor ... \\
+git log -{-}pretty=oneline}            & ein ''commit'' pro Zeile \\
 git log A..B}                          & alle zwischen {\tt A} und {\tt
 
 git branch
