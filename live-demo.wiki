@@ -8,150 +8,156 @@ Wachtmeister, bitte diese beiden gruppen beobachten.
 
 Einsehen:
 
-git config --get user.name
-git config --get user.email
+    git config --get user.name
+    git config --get user.email
 
 Setzen:
 
-git config --global user.name Max Mustermann
-git config --get user.name
+    git config --global user.name Max Mustermann
+    git config --get user.name
 
 Zurück:
 
-git config --global user.name Valentin Haenel
-git config --get user.name
+    git config --global user.name Valentin Haenel
+    git config --get user.name
 
 ==== Projekt Erstellen ====
 
-mkdir git-workshop-demo
-cd git-workshop-demo
-git init
+    mkdir demo
+    cd demo
+    git init
 
 TODO: hier nochmal config üben?
 
 ==== Arbeitsablauf ====
 
-vim datei (one line)
-git status
-git add datei
-git status
-git commit -m "erster commit"
-git show
+    vim datei (one line)
+    git status
+    git add datei
+    git status
+    git commit -m "erster commit"
+    git show
 
 ==== Informationen ====
 
-git log
-gitk --all
-tig
+    git log
+    gitk --all
+    tig
 
-vim datei (next line)
-git diff
-git commit -a -m "eine Zeile hinzugefügt"
+    vim datei (next line)
+    git diff
+    git commit -a -m "eine Zeile hinzugefügt"
 
-git log
-gitk --all
-tig
+    git log
+    gitk --all
+    tig
 
-git log --pretty=oneline
+    git log --pretty=oneline
 
 ==== Branches ====
 
-git branch feature
-git branch
-git checkout feature
-vim datei
-git commit -a -m "commit im branch 'feature'"
-git checkout master
-vim datei
-git commit -a -m "commit im branch 'master'"
-gitk --all
 
-git branch fehler
-git branch -d fehler
+Branch 'feature' erstellen:
+
+    git branch feature
+    git branch
+    git checkout feature
+    vim datei
+    git commit -a -m "commit im branch 'feature'"
+    git checkout master
+    vim datei
+    git commit -a -m "commit im branch 'master'"
+    gitk --all
+
+Branch Löschen
+
+    git branch fehler
+    git branch -d fehler
 
 ==== Merging  ====
 
-git config --global merge.summary true
-
-git merge feature
+Branch 'feature' mergen
 
 (WICHTIG die Modifikationen müssen so passiert sein das KEIN Konflikt entsteht,
 evtl mit sed arbeiten?)
 
-gitk
+    git config --global merge.summary true
 
-git checkout feature
-git merge master
+    git config --global merge.summary true
 
-gitk
+    git merge feature
+
+    gitk
+
+    git checkout feature
+    git merge master
+
+    gitk
 
 ==== Rebasing ====
 
-vim file
-git commit -a -m "zweiter commit im branch 'feature'"
-git checkout master
-vim file
-git commit -a -m "zweiter commit im branch 'master'"
+    vim file
+    git commit -a -m "zweiter commit im branch 'feature'"
+    git checkout master
+    vim file
+    git commit -a -m "zweiter commit im branch 'master'"
 
-git rebase master feature
+    git rebase master feature
 
-gitk
+    gitk
 
 ==== Konflikte ====
 
-git checkout feature
-vim file
-git commit -a -m "feature commit für konflikt"
-git checkout master
-vim file (Zeile anders verändern)
-git commit -a -m "master commit für konflikt"
+    git checkout feature
+    vim file
+    git commit -a -m "feature commit für konflikt"
+    git checkout master
+    vim file (Zeile anders verändern)
+    git commit -a -m "master commit für konflikt"
 
-git merge
-vim file (Konflikt marker zeigen und löschen)
-git add file
-git commit
+    git merge
+    vim file (Konflikt marker zeigen und löschen)
+    git add file
+    git commit
 
 ==== Remote ====
 
-cd ../
-mkdir git-workshop-demo2
-cd git-workshop-demo2
-git init
-vim datei2
+    cd ../
+    mkdir demo2
+    cd demo2
+    git init
+    vim datei2
 
-cd ../git-workshop-demo
-git remote add demo2 ../git-workshop-demo2
-git remote update
-git branch -r
-git branch -a
-git merge demo2/master
-ls (datei und datei2 vorhanden)
-cd ../git-workshop-demo2
-git pull ../git-workshop
-ls (datei und datei2 vorhanden)
+    cd ../demo
+    git remote add demo2 ../demo2
+    git remote update
+    git branch -r
+    git branch -a
+    git merge demo2/master
+    ls (datei und datei2 vorhanden)
+    cd ../demo2
+    git pull ../git-workshop
+    ls (datei und datei2 vorhanden)
 
 (push in ein repo mit WD nicht gut, drum:)
 
-cd ../
-git clone --bare demo demo-server
-git clone demo-server demo-clone
-cd demo-clone
-vim datei3
-git add datei3
-git commit -m "commit im clone"
-git push
-cd ../demo
-git remote add server ../demo-server
-git pull server master
+    cd ../
+    git clone --bare demo demo-server
+    git clone demo-server demo-clone
+    cd demo-clone
+    vim datei3
+    git add datei3
+    git commit -m "commit im clone"
+    git push
+    cd ../demo
+    git remote add server ../demo-server
+    git pull server master
 
-vim datei3
-git format-patch
+    vim datei3
+    git format-patch
 
-git branch -b remote-branch
-git push server remote-branch
-
-
-
+    git branch -b remote-branch
+    git push server remote-branch
 
 
 
