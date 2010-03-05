@@ -40,9 +40,19 @@ TODO: hier nochmal config üben?
 
 ==== Informationen ====
 
+Einfach:
+
     git log
+
+Grafisch:
+
     gitk --all
+
+Konsole:
+
     tig
+
+Welche auswirkungen hat ein Commit:
 
     vim datei (next line)
     git diff
@@ -52,36 +62,39 @@ TODO: hier nochmal config üben?
     gitk --all
     tig
 
+Extra - Log Formate:
+
     git log --pretty=oneline
 
 ==== Branches ====
-
 
 Branch 'feature' erstellen:
 
     git branch feature
     git branch
     git checkout feature
+
+Commits machen:
+
     vim datei
     git commit -a -m "commit im branch 'feature'"
     git checkout master
     vim datei
     git commit -a -m "commit im branch 'master'"
+
     gitk --all
 
-Branch Löschen
+Branch Löschen:
 
     git branch fehler
     git branch -d fehler
 
 ==== Merging  ====
 
-Branch 'feature' mergen
+Branch 'feature' mergen:
 
 (WICHTIG die Modifikationen müssen so passiert sein das KEIN Konflikt entsteht,
 evtl mit sed arbeiten?)
-
-    git config --global merge.summary true
 
     git config --global merge.summary true
 
@@ -89,12 +102,20 @@ evtl mit sed arbeiten?)
 
     gitk
 
+Fast forward:
+
     git checkout feature
     git merge master
 
     gitk
 
+Extra - Cherry Pick:
+
+TODO
+
 ==== Rebasing ====
+
+Commits machen:
 
     vim file
     git commit -a -m "zweiter commit im branch 'feature'"
@@ -102,11 +123,19 @@ evtl mit sed arbeiten?)
     vim file
     git commit -a -m "zweiter commit im branch 'master'"
 
+    gitk
+
+Rebase!:
+
     git rebase master feature
 
     gitk
 
 ==== Konflikte ====
+
+Commits machen:
+
+(WICHTIG: einfach das Ende einer Zeile verändern um den Konflikt zu erzeugen.)
 
     git checkout feature
     vim file
@@ -116,7 +145,10 @@ evtl mit sed arbeiten?)
     git commit -a -m "master commit für konflikt"
 
     git merge
-    vim file (Konflikt marker zeigen und löschen)
+
+Konflikt Marker zeigen und löschen.
+
+    vim file
     git add file
     git commit
 
@@ -158,6 +190,7 @@ evtl mit sed arbeiten?)
 
     git branch -b remote-branch
     git push server remote-branch
+
 
 
 
