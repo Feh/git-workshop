@@ -208,8 +208,9 @@
 \draw[push] (maintainer.west) -- node[push-label]{push} (blessed-repo.east);
 
 % Pull
-\draw[pull]  (tn01.north) -- node[pull-label]{pull} (blessed-repo.220);
-\draw[pull]  (tn02.west) .. controls +(-2,0) and +(0,-3) .. node[pull-label]{pull} (blessed-repo.south);
+\draw[pull]  (tn01.west) .. controls +(-2,2) and +(-1,-3) .. node[pull-label]{pull} (blessed-repo.west);
+\draw[pull]  (tn02.172) .. controls +(-2,0) and +(0,-3) .. node[pull-label]{pull} (blessed-repo.south);
+\draw[pull]  (tn02.west) .. controls +(-3,-1) and +(3,-4) .. node[pull-label]{pull} (tn01-repo.-35);
 \draw[pull, dashed]  (maintainer.-165) -- node[pull-label,near start]{pull} (tn02-repo.east);
 
 % Kommunikation
