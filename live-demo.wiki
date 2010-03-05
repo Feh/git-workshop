@@ -97,6 +97,19 @@ git rebase master feature
 
 gitk
 
+==== Konflikte ====
+
+git checkout feature
+vim file
+git commit -a -m "feature commit für konflikt"
+git checkout master
+vim file (Zeile anders verändern)
+git commit -a -m "master commit für konflikt"
+
+git merge
+vim file (Konflikt marker zeigen und löschen)
+git add file
+git commit
 
 
 
