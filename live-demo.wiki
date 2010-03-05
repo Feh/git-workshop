@@ -111,6 +111,48 @@ vim file (Konflikt marker zeigen und löschen)
 git add file
 git commit
 
+==== Remote ====
+
+cd ../
+mkdir git-workshop-demo2
+cd git-workshop-demo2
+git init
+vim datei2
+
+cd ../git-workshop-demo
+git remote add demo2 ../git-workshop-demo2
+git remote update
+git branch -r
+git branch -a
+git merge demo2/master
+ls (datei und datei2 vorhanden)
+cd ../git-workshop-demo2
+git pull ../git-workshop
+ls (datei und datei2 vorhanden)
+
+(push in ein repo mit WD nicht gut, drum:)
+
+cd ../
+git clone --bare demo demo-server
+git clone demo-server demo-clone
+cd demo-clone
+vim datei3
+git add datei3
+git commit -m "commit im clone"
+git push
+cd ../demo
+git remote add server ../demo-server
+git pull server master
+
+vim datei3
+git format-patch
+
+git branch -b remote-branch
+git push server remote-branch
+
+
+
+
 
 
 git log -N}                            & die letzten @N@ anzeigen\\
