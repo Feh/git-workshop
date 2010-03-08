@@ -1,6 +1,8 @@
 Hier werden sowohl die Kommandos beschrieben die wir vorführen wollen, und auch
 zusätzliche Beispiele die wir verwenden können.
 
+Wichtig: bei Inhalten immer eine Leerzeile dazwischen
+
 ==== Namen und Email einstellen: ====
 
 Einsehen:
@@ -28,7 +30,7 @@ TODO: hier nochmal config üben?
 
 ==== Arbeitsablauf ====
 
-    vim datei (one line)
+    (neue Zeile hinzufügen)
     git status
     git add datei
     git status
@@ -57,7 +59,8 @@ Konsole:
 
 Welche auswirkungen hat ein Commit:
 
-    vim datei (next line)
+
+    (Eine weitere Zeile)
     git diff
     git commit -a -m "eine Zeile hinzugefügt"
 
@@ -79,10 +82,10 @@ Branch 'feature' erstellen:
 
 Commits machen:
 
-    vim datei
+    (eine Zeile zwischen den beiden ersten)
     git commit -a -m "commit im branch 'feature'"
     git checkout master
-    vim datei
+    (eine Zeile am Ende)
     git commit -a -m "commit im branch 'master'"
 
     gitk --all
@@ -105,7 +108,7 @@ evtl mit sed arbeiten?)
 
     gitk
 
-Fast forward:
+Fast forward (Branch 'feature' auf den Stand von 'master' bringen):
 
     git checkout feature
     git merge master
@@ -120,10 +123,12 @@ TODO
 
 Commits machen:
 
-    vim file
+    (Neue Zeile am Ende)
     git commit -a -m "zweiter commit im branch 'feature'"
+
+
     git checkout master
-    vim file
+    (Neue Zeile in der Mitte)
     git commit -a -m "zweiter commit im branch 'master'"
 
     gitk
@@ -138,13 +143,11 @@ Rebase!:
 
 Commits machen:
 
-(WICHTIG: einfach das Ende einer Zeile verändern um den Konflikt zu erzeugen.)
-
     git checkout feature
-    vim file
+    (Das Ende einer Zeile verändern)
     git commit -a -m "feature commit für konflikt"
     git checkout master
-    vim file (Zeile anders verändern)
+    (Zeile anders verändern)
     git commit -a -m "master commit für konflikt"
 
     git merge
