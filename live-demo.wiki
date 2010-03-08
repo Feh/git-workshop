@@ -179,10 +179,20 @@ Integration der Veränderungen:
 
 ==== Kür ====
 
-    cd ../demo
-    git remote add demo2 ../demo2
-    git remote update
-    git branch -r
+Remote branch löschen:
+
+Erstellen:
+
+    git branch loesch-mich
+
+Pushen:
+
+    git push demo-remote loesch-mich
+    git branch -a
+
+Löschen:
+
+    git branch -d loesch-mich
     git branch -a
     git merge demo2/master
     ls (datei und datei2 vorhanden)
