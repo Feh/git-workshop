@@ -5,12 +5,25 @@ usecolortheme={default}
 usepackage=[utf8]{inputenc}
 usepackage=[T1]{fontenc}
 usepackage={graphicx}
-
-title={Git-Workshop}
-subtitle={Chemnitzer Linuxtage 2010}
-author={Valentin Hänel, Julius Plenz}
-date={13. März 2010}
+titleframe=False
 [autotemplate]>
+
+\input{cc_beamer.tex}
+\begin{frame}
+    \title{Git-Workshop}
+    \subtitle{Chemnitzer Linuxtage 2010}
+    \author{Valentin Hänel, Julius Plenz}
+    \date{13. März 2010}
+    \titlepage
+    \begin{center}
+    \begin{tabular}[t]{lr}
+        \mbox{\CcGroupByNcSa{0.83}{0.95ex}}  &
+        \parbox[b]{7cm}{
+        {\tiny Veröffentlicht unter der CreativeCommons-Lizenz (By, Nc, Sa)}\\
+        {\tiny \url{http://github.com/Feh/git-workshop/raw/pdf/folien/git.pdf}}} \\
+    \end{tabular}
+\end{center}
+\end{frame}
 
 ==== Wer kennt wen? ====
 
