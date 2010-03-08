@@ -2,6 +2,8 @@
 documentclass={beamer}
 usecolortheme={default}
 
+setbeamertemplate={navigation symbols}{}
+
 usepackage=[utf8]{inputenc}
 usepackage=[T1]{fontenc}
 usepackage={graphicx}
