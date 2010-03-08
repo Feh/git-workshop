@@ -1,7 +1,8 @@
 Hier werden sowohl die Kommandos beschrieben die wir vorführen wollen, und auch
 zusätzliche Beispiele die wir verwenden können.
 
-Wichtig: bei Inhalten immer eine Leerzeile dazwischen
+Wichtig: bei Inhalten immer eine Leerzeile dazwischen, das ist wichtig damit
+bei der merge demo kein Konflikt entsteht.
 
 ==== Namen und Email einstellen: ====
 
@@ -98,9 +99,6 @@ Branch Löschen:
 ==== Merging  ====
 
 Branch 'feature' mergen:
-
-(WICHTIG die Modifikationen müssen so passiert sein das KEIN Konflikt entsteht,
-evtl mit sed arbeiten?)
 
     git config --global merge.summary true
 
