@@ -58,7 +58,7 @@ Konsole:
 
     tig
 
-Welche auswirkungen hat ein Commit:
+Welche Auswirkungen hat ein Commit:
 
 
     (Eine weitere Zeile)
@@ -106,7 +106,7 @@ Branch 'feature' mergen:
 
     gitk
 
-Fast forward (Branch 'feature' auf den Stand von 'master' bringen):
+Fast-forward (Branch 'feature' auf den Stand von 'master' bringen):
 
     git checkout feature
     git merge master
