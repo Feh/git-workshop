@@ -29,6 +29,13 @@ Zurück:
 
 TODO: hier nochmal config üben?
 
+Extra - Mit einem leeren commit beginnen:
+
+    git init
+    git commit --allow-empty -m "Zero"
+    git tag 0
+
+
 ==== Arbeitsablauf ====
 
     (neue Zeile hinzufügen)
@@ -38,11 +45,10 @@ TODO: hier nochmal config üben?
     git commit -m "erster commit"
     git show
 
-Extra - Mit einem leeren commit beginnen:
+Extra - interaktiv hunks hinzufügen
 
-    git init
-    git commit --allow-empty -m "Zero"
-    git tag 0
+    (eine Zeile davor, eine dannach)
+    git add -p
 
 ==== Informationen ====
 
