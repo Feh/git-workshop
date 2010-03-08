@@ -1,9 +1,6 @@
 Hier werden sowohl die Kommandos beschrieben die wir vorführen wollen, und auch
 zusätzliche Beispiele die wir verwenden können.
 
-Wichtig: Font und background sollten die demo nicht behindern. Also werte
-Wachtmeister, bitte diese beiden gruppen beobachten.
-
 ==== Namen und Email einstellen: ====
 
 Einsehen:
