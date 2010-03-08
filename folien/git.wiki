@@ -2,15 +2,31 @@
 documentclass={beamer}
 usecolortheme={default}
 
+setbeamertemplate={navigation symbols}{}
+
 usepackage=[utf8]{inputenc}
 usepackage=[T1]{fontenc}
 usepackage={graphicx}
-
-title={Git-Workshop}
-subtitle={Chemnitzer Linuxtage 2010}
-author={Valentin Hänel, Julius Plenz}
-date={13. März 2010}
+usepackage={lmodern}
+titleframe=False
 [autotemplate]>
+
+\input{cc_beamer.tex}
+\begin{frame}
+    \title{Git-Workshop}
+    \subtitle{Chemnitzer Linuxtage 2010}
+    \author{Valentin Hänel, Julius Plenz}
+    \date{13. März 2010}
+    \titlepage
+    \begin{center}
+    \begin{tabular}[t]{lr}
+        \mbox{\CcGroupByNcSa{0.83}{0.95ex}}  &
+        \parbox[b]{7cm}{
+        {\tiny Veröffentlicht unter der CreativeCommons-Lizenz (By, Nc, Sa)}\\
+        {\tiny \url{http://github.com/Feh/git-workshop/raw/pdf/folien/git.pdf}}} \\
+    \end{tabular}
+\end{center}
+\end{frame}
 
 ==== Wer kennt wen? ====
 
@@ -155,14 +171,32 @@ TODO: rerere erwähnen bzw. vorführen!
 
 Remote Repositories:
 * @git remote -v@
-* @git remote add ''ws-ro'' git.plenz.com:git-workshop@
+* @git remote add ''name'' ''url''@
 * @git remote update@
+* @git remote rm ''name''@
+
+Details der Repositories ändern:
+* @vim .git/config@
 
 Remote Branches auflisten:
 * @git branch -r@
 
-Schauen, »wie weit vorne« die anderen sind:
-* @git log ''ws-ro''/master..@
+==== Wir tauschen uns aus ====
+
+* Remote ''blessed'' klonen (read-only):
+** @git clone -o blessed git://git.plenz.com/git-tips@
+* Schreibbares Repository eintragen: ''meins''
+** \texttt{git remote add meins ssh://tn01@git.plenz.com/repos/tn01}
+* Repository eines anderen Teilnehmers hinzufügen:
+** @git remote add tn02 git://git.plenz.com/tn02@
+* Schauen, »wie weit« die anderen sind:
+** @gitk -{}-all@
+
+==== Die Infrastruktur ====
+
+<[figure]
+<<<infrastruktur-crop.pdf, scale=0.6>>>
+[figure]>
 
 ==== Fremden Code holen, eigenen versenden ====
 
