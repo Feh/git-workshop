@@ -155,14 +155,26 @@ TODO: rerere erwähnen bzw. vorführen!
 
 Remote Repositories:
 * @git remote -v@
-* @git remote add ''ws-ro'' git.plenz.com:git-workshop@
+* @git remote add ''name'' ''url''@
 * @git remote update@
+* @git remote rm ''name''@
+
+Details der Repositories ändern:
+* @vim .git/config@
 
 Remote Branches auflisten:
 * @git branch -r@
 
-Schauen, »wie weit vorne« die anderen sind:
-* @git log ''ws-ro''/master..@
+==== Wir tauschen uns aus ====
+
+* Remote ''blessed'' klonen (read-only):
+** @git clone -o blessed git://git.plenz.com/git-tips@
+* Schreibbares Repository eintragen: ''meins''
+** \texttt{git remote add meins ssh://tn01@git.plenz.com/repos/tn01}
+* Repository eines anderen Teilnehmers hinzufügen:
+** @git remote add tn02 git://git.plenz.com/tn02@
+* Schauen, »wie weit« die anderen sind:
+** @gitk -{}-all@
 
 ==== Fremden Code holen, eigenen versenden ====
 
