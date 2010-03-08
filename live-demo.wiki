@@ -77,7 +77,30 @@ Welche Auswirkungen hat ein Commit:
 
 Extra - Log Formate:
 
+Als Einzeiler:
+
     git log --pretty=oneline
+
+die letzten N anzeigen
+
+    git log -N
+
+bis zu COMMIT anzeigen
+
+    git log COMMIT
+
+Alle seit ...
+
+    git log --since="23 hours"
+
+Alle vor ...
+
+    git log --before="42 days"
+
+Alle zwischen A und B
+
+    git log A..B
+
 
 ==== Branches ====
 
@@ -210,13 +233,6 @@ Branch erstellen der einen anderen root commit hat:
     git commit --allow-empty -m "zero"
 
 
-
-git log -N}                            & die letzten @N@ anzeigen\\
-git log COMMIT}                        & bis zu @COMMIT@ anzeigen \\
-git log -{-}since="23 hours"}          & alle seit ... \\
-git log -{-}before="42 days"}          & alle vor ... \\
-git log -{-}pretty=oneline}            & ein ''commit'' pro Zeile \\
-git log A..B}                          & alle zwischen {\tt A} und {\tt
 
 git branch
 
