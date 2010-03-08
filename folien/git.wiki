@@ -176,6 +176,12 @@ Remote Branches auflisten:
 * Schauen, »wie weit« die anderen sind:
 ** @gitk -{}-all@
 
+==== Die Infrastruktur ====
+
+<[figure]
+<<<infrastruktur-crop.pdf, scale=0.6>>>
+[figure]>
+
 ==== Fremden Code holen, eigenen versenden ====
 
 Aus einem anderen Repository neuen Code »ziehen«:
