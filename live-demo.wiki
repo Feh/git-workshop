@@ -194,31 +194,16 @@ Löschen:
 
     git branch -d loesch-mich
     git branch -a
-    git merge demo2/master
-    ls (datei und datei2 vorhanden)
-    cd ../demo2
-    git pull ../git-workshop
-    ls (datei und datei2 vorhanden)
+    git push demo-remote :loesch-mich
 
-(push in ein repo mit WD nicht gut, drum:)
+(Ich glaube das funktioniert weil quasi kein ref gepushed wird.)
 
-    cd ../
-    git clone --bare demo demo-server
-    git clone demo-server demo-clone
-    cd demo-clone
-    vim datei3
-    git add datei3
-    git commit -m "commit im clone"
-    git push
-    cd ../demo
-    git remote add server ../demo-server
-    git pull server master
+Branch erstellen der einen anderen root commit hat:
 
-    vim datei3
-    git format-patch
-
-    git branch -b remote-branch
-    git push server remote-branch
+    git clean -fx
+    git symbolic-ref HEAD refs/heads/branch-name
+    git rm -r '*'
+    git commit --allow-empty -m "zero"
 
 
 
