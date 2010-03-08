@@ -5,6 +5,7 @@ usecolortheme={default}
 usepackage=[utf8]{inputenc}
 usepackage=[T1]{fontenc}
 usepackage={graphicx}
+usepackage={lmodern}
 titleframe=False
 [autotemplate]>
 
