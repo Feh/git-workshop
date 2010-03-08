@@ -158,13 +158,26 @@ Konflikt Marker zeigen und löschen.
     git add file
     git commit
 
+So, jetzt gehts weiter...
+
 ==== Remote ====
 
-    cd ../
-    mkdir demo2
-    cd demo2
-    git init
-    vim datei2
+Wir tun mal so als wären wir Teilnehmer:
+
+    git clone git://git.plenz.com/git-tips
+    git remote add meins ssh://tn01@git.plenz.com/repos/tn01
+    vim datei
+
+Integration der Veränderungen:
+
+    pull von teilnehmer repo
+    merge
+    push nach blessed
+
+    gitk
+
+
+==== Kür ====
 
     cd ../demo
     git remote add demo2 ../demo2
