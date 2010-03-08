@@ -39,7 +39,7 @@ TODO: hier nochmal config üben?
 
 Extra - Mit einem leeren commit beginnen:
 
-    git init 
+    git init
     git commit --allow-empty -m "Zero"
     git tag 0
 
