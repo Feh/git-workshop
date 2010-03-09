@@ -89,6 +89,21 @@ Wer hat schonmal ...
 # @git commit -m '\emph{datei} angepasst'@
 # @git show@
 
+==== Referenzen und ignorierte Dateien ====
+
+Relative Referenzen:
+* @HEAD@: Der letzte Commit (wird per @git show@ angezeigt)
+* @HEAD\^{}@: Der vorletzte Commit
+* @HEAD\~{}''N''@: Der ''N''.-letzte Commit
+
+--.5cm--
+Dateien ignorieren:
+* Globbing-Muster in @.gitignore@ schreiben. Z.\,B.:
+** @*.aux@
+** @*.bak@
+** @*.swp@
+** @.gitignore@ (die Datei selbst)
+
 ==== Informationen über das Repository erhalten ====
 
 * Den jüngsten Commit im vollen Umfang anschauen:
