@@ -164,12 +164,12 @@ TODO
 
 Commits machen:
 
-    git checkout feature
+    git checkout apfel
     (Das Ende einer Zeile verändern)
-    git commit -a -m "feature commit für konflikt"
-    git checkout master
+    git commit -a -m "erster commit für konflikt"
+    git checkout birne
     (Zeile anders verändern)
-    git commit -a -m "master commit für konflikt"
+    git commit -a -m "zweiter commit für konflikt"
 
     git merge
 
