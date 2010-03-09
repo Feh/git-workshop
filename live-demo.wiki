@@ -21,6 +21,10 @@ Zurück:
     git config --global user.name Valentin Haenel
     git config --global user.email valentin.haenel@gmx.de
 
+Farbe:
+
+    git config --global color.ui auto
+
 ==== Projekt Erstellen ====
 
     mkdir demo
@@ -106,14 +110,14 @@ Alle zwischen A und B
 
 Branch 'feature' erstellen:
 
-    git branch feature
+    git branch apfel
     git branch
-    git checkout feature
+    git checkout apfel
 
 Commits machen:
 
     (eine Zeile zwischen den beiden ersten)
-    git commit -a -m "commit im branch 'feature'"
+    git commit -a -m "commit im branch 'apfel'"
     git checkout master
     (eine Zeile am Ende)
     git commit -a -m "commit im branch 'master'"
@@ -122,25 +126,35 @@ Commits machen:
 
 Branch Löschen:
 
-    git branch fehler
-    git branch -d fehler
+    git branch kiwi
+    git branch -d kiwi
 
 ==== Merging  ====
 
-Branch 'feature' mergen:
+Weiteren Branch erstellen:
+
+    git checkout master
+    git checkout -b birne
+    (Eine Zeile hinzufügen)
+
+
+Branch 'apfel' in 'birne' mergen:
 
     git config --global merge.summary true
 
-    git merge feature
+    git merge apfel
 
     gitk
 
 Fast-forward (Branch 'feature' auf den Stand von 'master' bringen):
 
-    git checkout feature
-    git merge master
+    git checkout apfel
+    git merge birne
 
     gitk
+
+    git checkout master 
+    git merge apfel
 
 Extra - Cherry Pick:
 
