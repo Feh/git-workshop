@@ -71,7 +71,7 @@ Wer hat schonmal ...
 ** @git init@
 
 * Um ein bestehendes Projekt zu importieren, »klont« man es mit seiner gesamten Versionsgeschichte:
-** \texttt{git clone git@git.plenz.com:\emph{git-workshop}}
+** \texttt{git clone git://git.plenz.com/\emph{git-tips}}
 
 ==== Begriffsbildung ====
 
