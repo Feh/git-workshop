@@ -186,7 +186,7 @@ Remote Branches auflisten:
 * Remote ''blessed'' klonen (read-only):
 ** @git clone -o blessed git://git.plenz.com/git-tips@
 * Schreibbares Repository eintragen: ''meins''
-** \texttt{git remote add meins ssh://tn01@git.plenz.com/repos/tn01}
+** \texttt{git remote add meins ssh://tn01@git.plenz.com:2222/repos/tn01}
 * Repository eines anderen Teilnehmers hinzufügen:
 ** @git remote add tn02 git://git.plenz.com/tn02@
 * Schauen, »wie weit« die anderen sind:
