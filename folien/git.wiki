@@ -45,7 +45,11 @@ Wer hat schonmal ...
 * Einen Commit gemacht?
 * Per Git mit anderen Leuten zusammengearbeitet?
 
-== Erste Kommandos ==
+==== Ablaufplan ====
+
+* Zu Anfang führen wir in die einfachsten Git-Kommandos ein und üben einige wichtige Arbeitsschritte.
+
+* Im zweiten Teil des Workshops wollen wir dann gemeinsam an einem Projekt arbeiten, um beispielhaft den Entwcklungsprozess einer Software zu demonstrieren.
 
 ==== Wer bin ich? -- Name und E-Mail einstellen ====
 
