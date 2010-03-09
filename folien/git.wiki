@@ -176,10 +176,9 @@ Bei einem @merge@ kann es zu Konflikten kommen. Wie geht man damit um?
 * @git add ''konfliktdateien''@
 * @git commit -m "''Merge-Konflikt behoben''"@
 
+--.5em--
 Das Unterfangen abbrechen:
-* @git reset HEAD@, oder
-
-TODO: rerere erwähnen bzw. vorführen!
+* @git reset HEAD@
 
 ==== Hinaus in die weite Welt! ====
 
