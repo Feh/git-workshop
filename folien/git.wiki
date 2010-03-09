@@ -120,6 +120,13 @@ Dateien ignorieren:
 * ... oder textbasiert:
 ** @tig@
 
+==== Änderungen rückgängig machen ====
+
+Einen neuen Commit erstellen, der eine alte Änderung rückgängig macht:
+* @git revert ''commit''@
+
+TODO
+
 ==== Branches: Abzweigungen ====
 
 Wir arbeiten schon die ganze Zeit im @master@-Branch!
