@@ -192,40 +192,24 @@ Das Unterfangen abbrechen:
 
 ==== Remote Repositories / Remote Branches ====
 
-Remote Repositories:
+Remote Repositories verwalten:
 * @git remote -v@
 * @git remote add ''name'' ''url''@
-* @git remote update@
 * @git remote rm ''name''@
+* @git remote update@
+** Fragt bei allen Remote Repositories an, ob es neue Commits gibt. (Eigene Commits werden durch dieses Kommando '''nicht''' veröffentlicht!)
 
-Details der Repositories ändern:
+Details der Repositories ändern (z.\,B. Vertipper):
 * @vim .git/config@
 
 Remote Branches auflisten:
 * @git branch -r@
 
-==== Wir tauschen uns aus ====
-
-* Remote ''blessed'' klonen (read-only):
-** @git clone -o blessed git://git.plenz.com/git-tips@
-* Schreibbares Repository eintragen: ''meins''
-** \texttt{git remote add meins ssh://tn01@git.plenz.com:2222/repos/tn01}
-* Repository eines anderen Teilnehmers hinzufügen:
-** @git remote add tn02 git://git.plenz.com/tn02@
-* Schauen, »wie weit« die anderen sind:
-** @gitk -{}-all@
-
-==== Die Infrastruktur ====
-
-<[figure]
-<<<infrastruktur-crop.pdf, scale=0.6>>>
-[figure]>
-
 ==== Fremden Code holen, eigenen versenden ====
 
 Aus einem anderen Repository neuen Code »ziehen«:
 * @git pull ''remote'' ''branch''@
-** @git pull origin master@
+** @git pull blessed master@
 Was hinter den Kulissen passiert:
 # @git fetch ''remote'' ''branch''@
 # @git merge ''remote''/''branch''@
@@ -234,6 +218,28 @@ Was hinter den Kulissen passiert:
 Eigene Commits »pushen« oder per E-Mail senden:
 * @git push ''remote'' ''branch''@
 * @git format-patch ''seit-wann''@
+
+==== Die Infrastruktur ====
+
+<[figure]
+<<<infrastruktur-crop.pdf, scale=0.6>>>
+[figure]>
+
+==== Wir tauschen uns aus ====
+
+* Remote ''blessed'' klonen (read-only):
+** @git clone -o blessed git://git.plenz.com/git-tips@
+** @cd git-tips@
+--.2cm--
+* Schreibbares Repository eintragen: ''meins''
+** \parbox[t]{9cm}{\texttt{git remote add meins}\\\texttt{\hspace*{1cm}ssh://tn01@git.plenz.com:2222/repos/tn01}}
+--.2cm--
+* Repository eines anderen Teilnehmers hinzufügen:
+** @git remote add tn02 git://git.plenz.com/tn02@
+--.2cm--
+* Schauen, »wie weit« die anderen sind:
+** @git remote update@
+** @gitk -{}-all@
 
 ==== Kür: Was noch fehlt ====
 
