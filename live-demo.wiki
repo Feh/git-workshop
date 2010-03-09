@@ -160,26 +160,6 @@ Extra - Cherry Pick:
 
 TODO
 
-==== Rebasing ====
-
-Commits machen:
-
-    (Neue Zeile am Ende)
-    git commit -a -m "zweiter commit im branch 'feature'"
-
-
-    git checkout master
-    (Neue Zeile in der Mitte)
-    git commit -a -m "zweiter commit im branch 'master'"
-
-    gitk
-
-Rebase!:
-
-    git rebase master feature
-
-    gitk
-
 ==== Konflikte ====
 
 Commits machen:
@@ -246,5 +226,25 @@ Branch erstellen der einen anderen root commit hat:
     git symbolic-ref HEAD refs/heads/branch-name
     git rm -r '*'
     git commit --allow-empty -m "zero"
+
+==== Rebasing ====
+
+Commits machen:
+
+    (Neue Zeile am Ende)
+    git commit -a -m "zweiter commit im branch 'feature'"
+
+
+    git checkout master
+    (Neue Zeile in der Mitte)
+    git commit -a -m "zweiter commit im branch 'master'"
+
+    gitk
+
+Rebase!:
+
+    git rebase master feature
+
+    gitk
 
 
