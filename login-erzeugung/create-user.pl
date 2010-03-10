@@ -60,11 +60,11 @@ for(my $i=1; $i<=$USERS; $i++) {
     my $user = sprintf("tn%02d", $i);
     my $pass = mnemonic();
     print "creating user $user with password $pass ... ";
-    qx(useradd -m -d /repos/$user --shell /usr/bin/git-shell $user);
+    qx(useradd -d /repos/$user --shell /usr/bin/git-shell $user);
     $users{$user} = $pass;
 
-    print " initializing git repo ... ";
-    qx(cd /repos/$user; git init --bare >/dev/null; chown -R $user:$user .);
+    print " cloning blessed git repo ... ";
+    qx(cd /repos; git clone --bare /repos/git-tips $user >/dev/null; chown -R $user:$user $user);
     print "done.\n";
 }
 
