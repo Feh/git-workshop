@@ -125,7 +125,17 @@ Dateien ignorieren:
 Einen neuen Commit erstellen, der eine alte Änderung rückgängig macht:
 * @git revert ''commit''@
 
-TODO
+Den Index zurücksetzen:
+* @git reset HEAD@
+
+Den Zustand von vor zwei Commits wiederherstellen:
+* @git checkout HEAD\textasciitilde{}2@ 
+
+Die Version von \emph{datei} anschauen, wie sie vor zwei Commits war:
+* @git show HEAD\textasciitilde{}2:''datei''@
+
+Die letzten zwei Commits _red_'''unwiederbringlich'''_ löschen:
+* @git reset -{}-hard HEAD\textasciitilde{}2@
 
 ==== Branches: Abzweigungen ====
 
