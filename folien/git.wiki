@@ -93,8 +93,8 @@ Wer hat schonmal ...
 
 Relative Referenzen:
 * @HEAD@: Der letzte Commit (wird per @git show@ angezeigt)
-* @HEAD\^{}@: Der vorletzte Commit
-* @HEAD\~{}''N''@: Der ''N''.-letzte Commit
+* @HEAD$^\mathbf{\wedge}$@: Der vorletzte Commit
+* @HEAD\textasciitilde{}''N''@: Der ''N''.-letzte Commit
 
 --.5cm--
 Dateien ignorieren:
