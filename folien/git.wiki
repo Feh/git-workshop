@@ -260,6 +260,25 @@ Eigene Commits »pushen« oder per E-Mail senden:
 * Tags
 * Reflog
 
+==== Danke! ====
+
+Vielen Dank für eure Teilnahme!
+
+--0.5cm--
+
+Fragen und Feedback gerne per Mail:
+
+--1cm--
+
+<[center]
+<[tabular]{ c c }
+Valentin Haenel &
+Julius Plenz\\
+valentin.haenel@gmx.de
+& clt10@plenz.com \\
+[tabular]>
+[center]>
+
 ==== Rebasing ====
 
 * '''Rebase''': Einen Branch auf eine »neue Basis« stellen:
