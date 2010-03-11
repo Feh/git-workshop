@@ -129,7 +129,7 @@ Den Index zurücksetzen:
 * @git reset HEAD@
 
 Den Zustand von vor zwei Commits wiederherstellen:
-* @git checkout HEAD\textasciitilde{}2@ 
+* @git checkout HEAD\textasciitilde{}2@
 
 Die Version von \emph{datei} anschauen, wie sie vor zwei Commits war:
 * @git show HEAD\textasciitilde{}2:''datei''@
