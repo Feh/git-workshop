@@ -13,12 +13,12 @@ Einsehen:
 
 Setzen:
 
-    git config --global user.name Max Mustermann
+    git config --global user.name "Max Mustermann"
     git config --global user.email max@mustermann.de
 
 Zurück:
 
-    git config --global user.name Valentin Haenel
+    git config --global user.name "Valentin Haenel"
     git config --global user.email valentin.haenel@gmx.de
 
 Farbe:
