@@ -106,6 +106,19 @@ Alle zwischen A und B
     git log A..B
 
 
+==== Undo Funktionen ====
+
+    (Zeile hinzufügen)
+    git add
+    git status
+    git reset HEAD
+    git status
+    git commit -m "commit der Rückgängig gemacht wird"
+    git revert HEAD
+    git log
+    git reset --hard HEAD~2
+    git log
+
 ==== Branches ====
 
 Branch 'feature' erstellen:
