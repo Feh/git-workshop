@@ -28,7 +28,7 @@ titleframe=False
 \end{center}
 \end{frame}
 
-==== Wer kennt wen? ====
+!==== Wer kennt wen? ====
 
 Wer kennt oder hat schon mal eines der folgenden Systeme benutzt?
 * CVS/RCS
@@ -36,7 +36,7 @@ Wer kennt oder hat schon mal eines der folgenden Systeme benutzt?
 * Mercurial, Darcs, Perforce, Bazaar
 * Git
 
-==== Wer kennt Git? ====
+!==== Wer kennt Git? ====
 
 Wer hat schonmal ...
 * @git@ eingegeben
@@ -45,13 +45,13 @@ Wer hat schonmal ...
 * Einen Commit gemacht?
 * Per Git mit anderen Leuten zusammengearbeitet?
 
-==== Ablaufplan ====
+!==== Ablaufplan ====
 
 * Zu Anfang führen wir in die einfachsten Git-Kommandos ein und üben einige wichtige Arbeitsschritte.
 
 * Im zweiten Teil des Workshops wollen wir dann gemeinsam an einem Projekt arbeiten, um beispielhaft den Entwcklungsprozess einer Software zu demonstrieren.
 
-==== Wer bin ich? -- Name und E-Mail einstellen ====
+!==== Wer bin ich? -- Name und E-Mail einstellen ====
 
 * Für alle Projekte (wird in @\~{}/.gitconfig@ gespeichert)
 ** @git config -{}-global user.name "Max Mustermann"@
@@ -63,7 +63,7 @@ Wer hat schonmal ...
 * Außerdem, für die, die wollen: Farbe!
 ** @git config -{}-global color.ui auto@
 
-==== Ein Projekt importieren oder erstellen ====
+!==== Ein Projekt importieren oder erstellen ====
 
 * Ein neues Projekt erstellt man wie folgt:
 ** @mkdir ''projekt''@
@@ -73,14 +73,14 @@ Wer hat schonmal ...
 * Um ein bestehendes Projekt zu importieren, »klont« man es mit seiner gesamten Versionsgeschichte:
 ** \texttt{git clone git://git.plenz.com/\emph{git-tips}}
 
-==== Begriffsbildung ====
+!==== Begriffsbildung ====
 
 * '''Index'''/'''Staging Area''': Bereich zwischen dem Arbeitsverzeichnis und dem Repository, in die Änderungen für den nächsten '''Commit''' gesammelt werden
 * '''Commit''': Eine Änderung an einer oder mehrerer Dateien, versehen mit Metadaten wie Autor, Datum und Beschreibung
 * '''Referenz''': Jeder '''Commit''' wird durch eine eindeutige SHA1-Summe identifiziert. Eine Referenz »zeigt« auf einen bestimmten Commit
 * '''Branch''': Ein »Zweig«, eine Abzweigung im Entwicklungszyklus, z.\,B. um ein neues Feature einzuführen.
 
-==== Ein typischer Arbeitsablauf ====
+!==== Ein typischer Arbeitsablauf ====
 
 * Eine @''datei''@ verändern, und die Änderungen in das Repository »einchecken«:
 # @vim ''datei''@
@@ -89,7 +89,7 @@ Wer hat schonmal ...
 # @git commit -m '\emph{datei} angepasst'@
 # @git show@
 
-==== Referenzen und ignorierte Dateien ====
+!==== Referenzen und ignorierte Dateien ====
 
 Relative Referenzen:
 * @HEAD@: Der letzte Commit (wird per @git show@ angezeigt)
@@ -104,7 +104,7 @@ Dateien ignorieren:
 ** @*.swp@
 ** @.gitignore@ (die Datei selbst)
 
-==== Informationen über das Repository erhalten ====
+!==== Informationen über das Repository erhalten ====
 
 * Den jüngsten Commit im vollen Umfang anschauen:
 ** @git show@
@@ -120,7 +120,7 @@ Dateien ignorieren:
 * ... oder textbasiert:
 ** @tig@
 
-==== Änderungen rückgängig machen ====
+!==== Änderungen rückgängig machen ====
 
 Einen neuen Commit erstellen, der eine alte Änderung rückgängig macht:
 * @git revert ''commit''@
@@ -137,7 +137,7 @@ Die Version von \emph{datei} anschauen, wie sie vor zwei Commits war:
 Die letzten zwei Commits _red_'''unwiederbringlich'''_ löschen:
 * @git reset -{}-hard HEAD\textasciitilde{}2@
 
-==== Branches: Abzweigungen ====
+!==== Branches: Abzweigungen ====
 
 Wir arbeiten schon die ganze Zeit im @master@-Branch!
 --.5cm--
@@ -156,7 +156,7 @@ Branches ...
 --.5cm--
 Idealisierter Workflow: Ein Branch pro neuem Feature oder Bugfix.
 
-==== Beispiel: Zwei Branches ====
+!==== Beispiel: Zwei Branches ====
 
 Zwei Branches erstellen, und auf jedem einen Commit machen. Dann das
 Resultat in @gitk@ anschauen.
@@ -169,7 +169,7 @@ Resultat in @gitk@ anschauen.
 * Commit machen
 * @gitk -{}-all@
 
-==== Merging: Branches Zusammenfügen ====
+!==== Merging: Branches Zusammenfügen ====
 
 Simple Merge:
 * @git merge ''neues-feature''@
@@ -179,7 +179,7 @@ Simple Merge:
 Fast-Forward Merge:
 * Wird @''topic''@ in @''master''@ gemerget und @''topic''@ basiert auf @''master''@, dann wird kein Merge-Commit erstellt, sondern nur der Zeiger »weitergerückt« bzw. »vorgespult«.
 
-==== Hilfe, Konflikte! ====
+!==== Hilfe, Konflikte! ====
 
 Bei einem @merge@ kann es zu Konflikten kommen. Wie geht man damit um?
 * @vim ''konfliktdateien''@
@@ -190,7 +190,7 @@ Bei einem @merge@ kann es zu Konflikten kommen. Wie geht man damit um?
 Das Unterfangen abbrechen:
 * @git reset HEAD@
 
-==== Hinaus in die weite Welt! ====
+!==== Hinaus in die weite Welt! ====
 
 * Wir wollen unsere Arbeit mit der anderer Entwickler austauschen!
 * Durch die verteilte Architektur von @git@ braucht es keinen ''zentralen'' Server zu geben.
@@ -200,7 +200,7 @@ Das Unterfangen abbrechen:
 ** Patch-Queue per E-Mail
 ** ... oder auch alles durcheinandergemixt.
 
-==== Remote Repositories / Remote Branches ====
+!==== Remote Repositories / Remote Branches ====
 
 Remote Repositories verwalten:
 * @git remote -v@
@@ -215,7 +215,7 @@ Details der Repositories ändern (z.\,B. Vertipper):
 Remote Branches auflisten:
 * @git branch -r@
 
-==== Fremden Code holen, eigenen versenden ====
+!==== Fremden Code holen, eigenen versenden ====
 
 Aus einem anderen Repository neuen Code »ziehen«:
 * @git pull ''remote'' ''branch''@
@@ -251,7 +251,7 @@ Eigene Commits »pushen« oder per E-Mail senden:
 ** @git remote update@
 ** @gitk -{}-all@
 
-==== Kür: Was noch fehlt ====
+!==== Kür: Was noch fehlt ====
 
 * Rebase
 * @git stash@
@@ -260,7 +260,7 @@ Eigene Commits »pushen« oder per E-Mail senden:
 * Tags
 * Reflog
 
-==== Danke! ====
+!==== Danke! ====
 
 Vielen Dank für eure Teilnahme!
 
@@ -279,7 +279,7 @@ valentin.haenel@gmx.de
 [tabular]>
 [center]>
 
-==== Rebasing ====
+!==== Rebasing ====
 
 * '''Rebase''': Einen Branch auf eine »neue Basis« stellen:
 ** @git rebase master ''topic''@
