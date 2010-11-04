@@ -200,6 +200,32 @@ Das Unterfangen abbrechen:
 ** Patch-Queue per E-Mail
 ** ... oder auch alles durcheinandergemixt.
 
+!==== Zentralisiert ====
+
+<[figure][ht]
+    <<<bilder/centralised.pdf, scale=0.35>>>
+[figure]>
+
+* Ein einziges zentrales Repository
+* Alle Entwickler haben Schreibzugriff
+
+!==== Öffentliche Entwickler-Repositories ====
+
+<[figure][ht]
+    <<<bilder/developer-public.pdf, scale=0.35>>>
+[figure]>
+
+* Ein öffentliches Repository pro Entwickler
+* Der Projektleiter integriert Verbesserungen
+
+!==== Patch-Queue per Email ====
+
+<[figure][ht]
+    <<<bilder/patches-per-mail.pdf, scale=0.32>>>
+[figure]>
+
+* Stark vom Kernel und Git selbst verwendet
+
 !==== Remote Repositories / Remote Branches ====
 
 Remote Repositories verwalten:
