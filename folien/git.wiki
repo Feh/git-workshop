@@ -179,6 +179,38 @@ Simple Merge:
 Fast-Forward Merge:
 * Wird @''topic''@ in @''master''@ gemerget und @''topic''@ basiert auf @''master''@, dann wird kein Merge-Commit erstellt, sondern nur der Zeiger »weitergerückt« bzw. »vorgespult«.
 
+!==== Vor dem Merge ====
+
+<[center]
+<<<bilder/merge-vorher.pdf,scale=0.12>>>
+[center]>
+
+* @topic@ ist fertig und soll in @master@ integriert werden
+
+!==== Nach dem Merge ====
+
+<[center]
+<<<bilder/merge-nachher.pdf,scale=0.12>>>
+[center]>
+
+* Im @master@ ausführen: @git merge topic@
+
+!====  Vor dem Fast-Forward ====
+
+<[center]
+<<<bilder/ff-vorher.pdf,scale=0.12>>>
+[center]>
+
+* In @master@ hat sich nichts getan, @topic@ ist fertig
+
+!====  Nach dem Fast-Forward ====
+
+<[center]
+<<<bilder/ff-nachher.pdf,scale=0.12>>>
+[center]>
+
+* @master@ wird »weitergerückt«, bzw. »vorgespult«
+
 !==== Hilfe, Konflikte! ====
 
 Bei einem @merge@ kann es zu Konflikten kommen. Wie geht man damit um?
