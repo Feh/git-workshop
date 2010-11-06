@@ -308,6 +308,22 @@ Eigene Commits »pushen« oder per E-Mail senden:
 * @git push ''remote'' ''branch''@
 * @git format-patch ''seit-wann''@
 
+!==== GitHub -- „Social Coding“ ====
+
+* GitHub stellt Git-Repositories zur Verfügung
+** Kostenlos und viel genutzt
+** Web-basiertes Interface
+** Aktionen „Fork“, „Follow“ und „Watch“
+
+* Account erstellen:
+** --> @http://www.github.com@
+** Authentifizierung per SSH-Schlüssel (ggf. erstellen)
+
+* Ein eigenes Repository hochladen:
+** Repository auf GitHub erstellen
+** @git remote add ''github''@\\\qquad{}@ssh://git\@github.com:''user''/''projekt''.git@
+** @git push ''github'' master@
+
 ==== Die Infrastruktur ====
 
 <[figure]
