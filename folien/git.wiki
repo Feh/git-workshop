@@ -14,9 +14,9 @@ titleframe=False
 \input{cc_beamer.tex}
 \begin{frame}
     \title{Git-Workshop}
-    \subtitle{Chemnitzer Linuxtage 2010}
+    \subtitle{Brandenburger Linux-Info-Tag}
     \author{Valentin Hänel, Julius Plenz}
-    \date{13. März 2010}
+    \date{6. November 2010}
     \titlepage
     \begin{center}
     \begin{tabular}[t]{lr}
@@ -354,7 +354,7 @@ Fragen und Feedback gerne per Mail:
 Valentin Haenel &
 Julius Plenz\\
 valentin.haenel@gmx.de
-& clt10@plenz.com \\
+& blit-2010@plenz.com \\
 [tabular]>
 [center]>
 
