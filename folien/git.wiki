@@ -160,6 +160,23 @@ Branches ...
 --.5cm--
 Idealisierter Workflow: Ein Branch pro neuem Feature oder Bugfix.
 
+!==== Commit Graph ====
+
+Ein Repository ist ein ''Gerichteter Azyklischer Graph''\\
+Engl.: Directed Acyclic Graph (DAG)
+
+<[center]
+<<<bilder/graph.pdf, scale=0.14>>>
+[center]>
+
+!==== Branches und Tags ====
+
+Branches und Tags sind Zeiger auf Knoten in dem Graphen.
+
+<[center]
+<<<bilder/graph-mit-refs.pdf, scale=0.14>>>
+[center]>
+
 !==== Beispiel: Zwei Branches ====
 
 Zwei Branches erstellen, und auf jedem einen Commit machen. Dann das
