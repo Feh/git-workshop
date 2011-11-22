@@ -189,7 +189,8 @@ Relative Referenzen:
 * @HEAD$^\mathbf{\wedge}$@: Der vorletzte Commit
 * @HEAD\textasciitilde{}''N''@: Der ''N''.-letzte Commit
 
---.5cm--
+==== Dateien ignorieren ====
+
 Dateien ignorieren:
 * Globbing-Muster in @.gitignore@ schreiben. Z.\,B.:
 ** @*.aux@
