@@ -93,6 +93,95 @@ Wer hat schonmal ...
 # @git commit -m '\emph{datei} angepasst'@
 # @git show@
 
+!==== Index / Staging Area ====
+
+* Im ''Index'' bzw. der ''Staging-Area'' werden Veränderungen für den nächsten Commit vorgemerkt
+* So kann der Inhalt von einem Commit schrittweise aus einzelnen Veränderungen zusammengestellt werden
+
+!==== Ausgangsstellung ====
+
+* Alle auf dem gleichen Stand
+
+<[center]
+<<<bilder/index-stage1.pdf, scale=0.25>>>
+[center]>
+
+!==== Veränderungen machen ====
+
+* Veränderungen werden im Working-Tree gemacht
+
+<[center]
+<<<bilder/index-stage2.pdf, scale=0.25>>>
+[center]>
+
+!==== Dem Index hinzufügen -- @git add@ ====
+
+* Die Veränderungen im Working-Tree --> Index 
+
+<[center]
+<<<bilder/index-stage3.pdf, scale=0.25>>>
+[center]>
+
+!==== Einen Commit erzeugen -- @git commit@ ====
+
+* Alle Veränderungen im Index --> Commit
+
+<[center]
+<<<bilder/index-stage4.pdf, scale=0.25>>>
+[center]>
+
+!==== Resultat ====
+
+* Alle wieder  auf dem gleichen Stand
+
+<[center]
+<<<bilder/index-stage5.pdf, scale=0.25>>>
+[center]>
+
+==== @HEAD@ ====
+
+<[block]{@HEAD@}
+Der neuste Commit in der Versionsgeschichte wird als @HEAD@ bezeichnet.
+[block]>
+
+==== @git status@ -- Wie ist der Zustand? ====
+
+<[block]{Status abfragen}
+@git status@
+[block]>
+
+* Welche Dateien wurden modifiziert?
+* Welche Veränderungen sind schon im Index?
+* Gibt es Git nicht bekannte Dateien? (''untracked files'')
+
+==== Dateien dem Index hinzufügen ====
+
+<[block]{Alle Veränderungen in einer Datei hinzufügen}
+@git add ''datei''@
+[block]>
+
+<[block]{Interaktives Hinzufügen}
+@git add -p@
+[block]>
+
+<[block]{Interaktives Hinzufügen nur für eine Datei}
+@git add -p ''datei''@
+[block]>
+
+==== Index: Unterschiede und Zurücksetzen ====
+
+<[block]{Unterschiede zwischen Working-Tree und @HEAD@}
+@git diff@
+[block]>
+
+<[block]{Unterschiede zwischen Index und Repository}
+@git diff -{}-cached@
+[block]>
+
+<[block]{Index zurücksetzen}
+@git reset@
+[block]>
+
 !==== Referenzen und ignorierte Dateien ====
 
 Relative Referenzen:
