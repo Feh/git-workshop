@@ -8,6 +8,7 @@ usepackage=[utf8]{inputenc}
 usepackage=[T1]{fontenc}
 usepackage={graphicx}
 usepackage={lmodern}
+usepackage={dirtree}
 titleframe=False
 [autotemplate]>
 
@@ -250,6 +251,64 @@ Branches ...
 --.5cm--
 Idealisierter Workflow: Ein Branch pro neuem Feature oder Bugfix.
 
+!==== Was wollen wir speichern ====
+
+Angenommen, wir wollen folgendes Verzeichnis speichern:
+
+--0.5cm--
+
+\dirtree{%
+.1 /.
+.2 hello.py.
+.2 README.
+.2 test/.
+.3 test.sh.
+}
+
+!==== Objektmodell ====
+
+* ''Blob'': Enthält den Inhalt einer Datei
+* ''Tree'': Eine Sammlung von Tree- und Blob-Objekten
+* ''Commit'': Besteht aus einer Referenz auf einen Tree mit zusätzlichen Informationen
+** ''Author'' und ''Commiter''
+** ''Parents''
+** ''Commit-Message''
+
+<[figure][ht]
+<<<bilder/objekte.pdf, scale=0.6>>>
+[figure]>
+
+!==== SHA-1 IDs ====
+
+* Objekte werden mit ''SHA-1 IDs'' identifiziert
+* Dies ist der ''Objekt-Name''
+* Wird aus dem Inhalt berechnet
+* ''SHA-1'' ist eine sogenannte Hash-Funktion; sie liefert für eine Bit-Sequenz mit der maximalen Länge von $2^{64}-1$ Bit ($\approx$2 Exbibyte) in eine Hexadezimal-Zahl der Länge 40 (d.\,h.\ 160 Bits)
+* Die resultierende Zahl ist eine von $2^{160} (\approx 1.5\cdot 10^{49})$ möglichen Zahlen und ziemlich einzigartig
+
+<[figure][htp]
+    <<<bilder/sha.pdf, scale=0.6>>>
+[figure]>
+
+!==== Objektverwaltung ====
+
+* Alle Objekte werden von Git in der ''Objektdatenbank'' (genannt Repository) gespeichert
+* Die Objekte sind durch ihre SHA-1 ID eindeutig adressierbar
+
+* Für jede Datei erzeugt Git ein Blob-Objekt
+* Für jedes Verzeichnis erzeugt Git ein Tree-Objekt
+* Ein Tree-Objekt enthält die Referenzen (SHA1 IDs) auf die in dem Verzeichnis enthaltenen Dateien
+
+!==== Zusammenfassung ====
+
+Ein Git-Repository enthält Commits; diese wiederum referenzieren Trees und Blobs, sowie ihren direkten Vorgänger
+
+<[figure][ht]
+    <<<bilder/objekte-zusammenhang.pdf, scale=0.6>>>
+[figure]>
+
+[frame]>
+
 !==== Commit Graph ====
 
 Ein Repository ist ein ''Gerichteter Azyklischer Graph''\\
@@ -258,6 +317,23 @@ Engl.: Directed Acyclic Graph (DAG)
 <[center]
 <<<bilder/graph.pdf, scale=0.14>>>
 [center]>
+
+!==== Branches und Tags ====
+
+Branches und Tags sind Zeiger auf Knoten in dem Graphen.\\
+_white_Engl._
+
+<[center]
+<<<bilder/graph-mit-refs.pdf, scale=0.14>>>
+[center]>
+
+!==== Graph-Struktur ====
+
+* Die gerichtete Graph-Struktur entsteht, da in jedem Commit Referenzen auf direkte Vorfahren gespeichert sind
+
+* Integrität kryptographisch gesichert
+
+* Git-Kommandos manipulieren die Graph-Struktur
 
 !==== Branches und Tags ====
 
