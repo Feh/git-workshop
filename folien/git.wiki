@@ -14,10 +14,10 @@ titleframe=False
 
 \input{cc_beamer.tex}
 \begin{frame}
-    \title{Git-Workshop}
-    \subtitle{Brandenburger Linux-Info-Tag}
-    \author{Valentin Hänel, Julius Plenz}
-    \date{6. November 2010}
+    \title{Git-Workshop, Teil I}
+    \subtitle{Freitagsrunde TechTalks, TU Berlin}
+    \author{Julius Plenz}
+    \date{25. November 2011}
     \titlepage
     \begin{center}
     \begin{tabular}[t]{lr}
@@ -409,6 +409,38 @@ Bei einem @merge@ kann es zu Konflikten kommen. Wie geht man damit um?
 Das Unterfangen abbrechen:
 * @git reset HEAD@
 
+!==== Danke! ====
+
+Vielen Dank für eure Teilnahme!
+
+--0.5cm--
+
+Fragen und Feedback gerne per Mail:
+
+--.2cm--
+
+\begin{center}
+julius@plenz.com
+\end{center}
+
+% Titelslide Teil II
+
+!==== ====
+
+    \title{Git-Workshop, Teil II}
+    \subtitle{Freitagsrunde TechTalks, TU Berlin}
+    \author{Julius Plenz}
+    \date{2. Dezember 2011}
+    \titlepage
+    \begin{center}
+    \begin{tabular}[t]{lr}
+        \mbox{\CcGroupByNcSa{0.83}{0.95ex}}  &
+        \parbox[b]{7cm}{
+        {\tiny Veröffentlicht unter der CreativeCommons-Lizenz (By, Nc, Sa)}\\
+        {\tiny \url{http://github.com/Feh/git-workshop/raw/pdf/folien/git.pdf}}} \\
+    \end{tabular}
+    \end{center}
+
 !==== Hinaus in die weite Welt! ====
 
 * Wir wollen unsere Arbeit mit der anderer Entwickler austauschen!
@@ -520,25 +552,6 @@ Eigene Commits »pushen« oder per E-Mail senden:
 * Git-Aliase
 * Tags
 * Reflog
-
-!==== Danke! ====
-
-Vielen Dank für eure Teilnahme!
-
---0.5cm--
-
-Fragen und Feedback gerne per Mail:
-
---1cm--
-
-<[center]
-<[tabular]{ c c }
-Valentin Haenel &
-Julius Plenz\\
-valentin.haenel@gmx.de
-& blit-2010@plenz.com \\
-[tabular]>
-[center]>
 
 ==== Rebasing ====
 
