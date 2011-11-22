@@ -540,7 +540,7 @@ valentin.haenel@gmx.de
 [tabular]>
 [center]>
 
-!==== Rebasing ====
+==== Rebasing ====
 
 * '''Rebase''': Einen Branch auf eine »neue Basis« stellen:
 ** @git rebase master ''topic''@
