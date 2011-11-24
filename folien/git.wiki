@@ -426,7 +426,27 @@ Bei einem @merge@ kann es zu Konflikten kommen. Wie geht man damit um?
 
 --.5em--
 Das Unterfangen abbrechen:
-* @git reset HEAD@
+* @git reset -{}-hard HEAD@
+
+!==== Branch-Modell ====
+
+* Dieses Modell wird in vielen OS-Projekten verwendet
+* Es gibt vier Haupt-Branches:
+** @maint@: Maintenance (Security und Bugfixes)
+** @master@: Vorbereitung des neuen Releases
+** @next@: Neue Features werden auf Stabilität getestet (Beta)
+** @pu@: ''proposed updates'', unfertige, experimentelle Features
+* @next@ und @pu@ werden möglicherweise verändert (neu aufgebaut, etc.)
+* Bugfixes werden von @maint@ in @master@ übernommen
+* Topic-Branches werden bei Vollendung in @next@ übernommen
+* Wird @next@ stabil, wandern die Änderungen in den @master@
+
+!==== Branch-Modell -- Visualisiert ====
+
+<[center]
+<<<bilder/branch-model.pdf, scale=0.17>>>
+[center]>
+
 
 !==== Rebase: Auf eine neue Basis bauen ====
 
