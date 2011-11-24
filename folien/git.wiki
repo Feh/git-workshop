@@ -70,6 +70,14 @@ Wer hat schonmal ...
 
 * Teil I findet komplett ''lokal'' auf dem eigenen Rechner statt -- erst in Teil II nutzen wir die verteilten Eigenschaften von Git aus
 
+!==== Motivation: Warum Versionskontrolle? ====
+
+* '''Sicherheit:''' Versionskontrolle schützt vor Verlusten
+* '''Dokumentation:''' Wer hat wann was gemacht?
+* '''Fokussierung:''' Entwicklung logisch gliedern
+* '''Kollaboration:''' Mit anderen Leuten an den gleichen Dateien arbeiten
+* '''Partizipation:''' Jeder kann mitmachen (GitHub etc.)
+
 !==== Interface ====
 
 <<<bilder/shell-vs-gui.png,width=\textwidth>>>
