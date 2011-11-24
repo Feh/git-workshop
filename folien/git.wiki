@@ -58,12 +58,17 @@ Wer hat schonmal ...
 * Teil I:
 ** Grundlegende Arbeitsschritte in Git
 ** Das Objektmodell -- eine theoretische Grundlage
-** Paralle Entwicklung: Branches und Merges
+** Parallele Entwicklung: Branches und Merges
+** Die Geschichte umschreiben: Rebase
+** Entwicklung koordinieren: Ein Branching-Modell
 
 * Teil II:
 ** Verteiltes Git: Commits hoch- und runterladen
+** Verschiedene Workflows
 ** Kollaboration live: Wir entwickeln gemeinsam ein Projekt
-** Oder: Wunschkonzert
+** Oder: Wunschkonzert -- was euch interessiert
+
+* Teil I findet komplett ''lokal'' auf dem eigenen Rechner statt -- erst in Teil II nutzen wir die verteilten Eigenschaften von Git aus
 
 !==== Interface ====
 
