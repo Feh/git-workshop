@@ -100,6 +100,7 @@ Wer hat schonmal ...
 
 * '''Index'''/'''Staging Area''': Bereich zwischen dem Arbeitsverzeichnis und dem Repository, in die Änderungen für den nächsten '''Commit''' gesammelt werden
 * '''Commit''': Eine Änderung an einer oder mehrerer Dateien, versehen mit Metadaten wie Autor, Datum und Beschreibung
+* '''Repository''': Eine Datenbank für Commits, dort wird die Versionsgeschichte aufgezeichnet
 * '''Referenz''': Jeder '''Commit''' wird durch eine eindeutige SHA1-Summe identifiziert. Eine Referenz »zeigt« auf einen bestimmten Commit
 * '''Branch''': Ein »Zweig«, eine Abzweigung im Entwicklungszyklus, z.\,B. um ein neues Feature einzuführen.
 
