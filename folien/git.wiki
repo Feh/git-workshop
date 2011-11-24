@@ -28,7 +28,7 @@ titleframe=False
         \mbox{\CcGroupByNcSa{0.83}{0.95ex}}  &
         \parbox[b]{7cm}{
         {\tiny Veröffentlicht unter der CreativeCommons-Lizenz (By, Nc, Sa)}\\
-        {\tiny \url{http://github.com/Feh/git-workshop/raw/pdf/folien/git.pdf}}} \\
+        {\tiny \url{http://wiki.freitagsrunde.org/TechTalks}}} \\
     \end{tabular}
 \end{center}
 \end{frame}
@@ -498,7 +498,7 @@ julius@plenz.com
         \mbox{\CcGroupByNcSa{0.83}{0.95ex}}  &
         \parbox[b]{7cm}{
         {\tiny Veröffentlicht unter der CreativeCommons-Lizenz (By, Nc, Sa)}\\
-        {\tiny \url{http://github.com/Feh/git-workshop/raw/pdf/folien/git.pdf}}} \\
+        {\tiny \url{http://wiki.freitagsrunde.org/TechTalks}}} \\
     \end{tabular}
     \end{center}
 
