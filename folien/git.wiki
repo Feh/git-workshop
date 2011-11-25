@@ -519,6 +519,16 @@ Das Unterfangen abbrechen:
 * Hilfe bei Fragen: \url{http://stackoverflow.com/}
 * Kostenlose Git-Repos: \url{http://github.com/}
 
+!==== Vorbereitung Für Teil II ====
+
+# Experimentiere mit den gelernten Kommandos
+# Verursache und löse einen Merge-Konflikt
+# Schau Dir den Google TechTalk von Linus Torvalds zum Thema Git an (von 2007)
+# Informiere dich, wie ein OSS-Projekt deiner Wahl Git verwendet
+
+* Und: Erstelle Dir einen Account bei GitHub o.\,Ä. -- nächstes Mal werden wir das brauchen!
+* Bei Fragen und Wünschen: E-Mail schreiben!
+
 !==== Danke! ====
 
 Vielen Dank für eure Teilnahme!
