@@ -489,6 +489,35 @@ Das Unterfangen abbrechen:
 *** @git rebase origin/master@
 *** @git rebase v1.1.23@
 
+!==== Ressourcen: Bücher ====
+
+<[columns]
+[[[ 2.5cm ]]]
+<<<bilder/progit.png,width=\textwidth>>>
+[[[ 7cm ]]]
+* \textbf{Pro Git} von Scott Chacon, APress, 2009
+* Kostenlos online verfügbar unter \url{http://progit.org/book/}
+[columns]>
+
+--.5cm--
+
+<[columns]
+[[[ 2.5cm ]]]
+<<<bilder/gitbuch.png,width=\textwidth>>>
+[[[ 7cm ]]]
+
+* \textbf{Git. Verteilte Versionskontrolle für Code und Dokumente}, Open Source Press, 2011
+* \url{http://gitbu.ch/}
+
+[columns]>
+
+!==== Ressourcen: Webseiten ====
+
+* Webseite von Git: \url{http://git-scm.com/}
+* Schnelle Übersicht: \url{http://gitref.org/}
+* Tipps und Tricks: \url{http://gitready.com/}
+* Hilfe bei Fragen: \url{http://stackoverflow.com/}
+* Kostenlose Git-Repos: \url{http://github.com/}
 
 !==== Danke! ====
 
