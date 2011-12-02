@@ -744,3 +744,17 @@ Eigene Commits »pushen« oder per E-Mail senden:
 * Git-Aliase
 * Tags
 * Reflog
+
+!==== Danke! ====
+
+Vielen Dank für eure Teilnahme!
+
+--0.5cm--
+
+Fragen und Feedback gerne per Mail:
+
+--.2cm--
+
+\begin{center}
+julius@plenz.com
+\end{center}
