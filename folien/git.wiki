@@ -600,7 +600,7 @@ julius@plenz.com
 
 <[block]{Zwei Commits zusammenfassen}
 @git rebase -i HEAD\textasciitilde{}''n''@\\
-$\rightarrow$ @edit@ des zweiten Commits durch @fixup@ ersetzen
+$\rightarrow$ @pick@ des zweiten Commits durch @fixup@ ersetzen
 [block]>
 
 * Einen Commit verschieben: Die Zeilen vertauschen
