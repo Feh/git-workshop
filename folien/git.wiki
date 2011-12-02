@@ -447,48 +447,6 @@ Das Unterfangen abbrechen:
 <<<bilder/branch-model.pdf, scale=0.17>>>
 [center]>
 
-
-!==== Rebase: Auf eine neue Basis bauen ====
-
-* '''Rebase''': Einen Branch auf eine »neue Basis« stellen.
-<[block]{@master@ als neue Basis für @''topic''@}
-@git checkout ''topic''@ \\
-@git rebase master@
-[block]>
-
-<[block]{Alternativ}
-@git rebase master ''topic''@
-[block]>
-
-!==== Vor dem Rebase ====
-
-<[center]
-<<<bilder/rebase-vorher.pdf,scale=0.12>>>
-[center]>
-
-* @''topic''@ soll auf der neusten Version von @master@ basieren
-
-!==== Nach dem Rebase ====
-
-<[center]
-<<<bilder/rebase-nachher.pdf,scale=0.12>>>
-[center]>
-
-* @git rebase master ''topic''@
-
-!==== Rebasing ====
-
-* '''Rebase''': Einen Branch auf eine »neue Basis« stellen:
-** @git rebase master ''topic''@
-
-* Interaktiv Commits neu ordnen, bearbeiten, zusammenfassen oder aufteilen:
-** @git rebase -i HEAD\~{}5@
-
-* _red_'''Wichtig:'''_ Man darf '''''niemals''''' Commits aus einem bereits veröffentlichten Branch -- auf dem also womöglich Andere ihre Arbeit basieren -- durch @git rebase@ verändern!
-** '''Daher: Nur Unveröffentlichtes gegen Veröffentlichtes rebasen:'''
-*** @git rebase origin/master@
-*** @git rebase v1.1.23@
-
 !==== Ressourcen: Bücher ====
 
 <[columns]
@@ -577,6 +535,48 @@ julius@plenz.com
 ** Oder: Wunschkonzert -- was euch interessiert
 
 * Teil I findet komplett ''lokal'' auf dem eigenen Rechner statt -- erst in Teil II nutzen wir die verteilten Eigenschaften von Git aus
+
+!==== Rebase: Auf eine neue Basis bauen ====
+
+* '''Rebase''': Einen Branch auf eine »neue Basis« stellen.
+<[block]{@master@ als neue Basis für @''topic''@}
+@git checkout ''topic''@ \\
+@git rebase master@
+[block]>
+
+<[block]{Alternativ}
+@git rebase master ''topic''@
+[block]>
+
+!==== Vor dem Rebase ====
+
+<[center]
+<<<bilder/rebase-vorher.pdf,scale=0.12>>>
+[center]>
+
+* @''topic''@ soll auf der neusten Version von @master@ basieren
+
+!==== Nach dem Rebase ====
+
+<[center]
+<<<bilder/rebase-nachher.pdf,scale=0.12>>>
+[center]>
+
+* @git rebase master ''topic''@
+
+!==== Rebasing ====
+
+* '''Rebase''': Einen Branch auf eine »neue Basis« stellen:
+** @git rebase master ''topic''@
+
+* Interaktiv Commits neu ordnen, bearbeiten, zusammenfassen oder aufteilen:
+** @git rebase -i HEAD\~{}5@
+
+* _red_'''Wichtig:'''_ Man darf '''''niemals''''' Commits aus einem bereits veröffentlichten Branch -- auf dem also womöglich Andere ihre Arbeit basieren -- durch @git rebase@ verändern!
+** '''Daher: Nur Unveröffentlichtes gegen Veröffentlichtes rebasen:'''
+*** @git rebase origin/master@
+*** @git rebase v1.1.23@
+
 
 !==== Hinaus in die weite Welt! ====
 
