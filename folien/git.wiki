@@ -658,6 +658,10 @@ Details der Repositories ändern (z.\,B. Vertipper):
 Remote Branches auflisten:
 * @git branch -r@
 
+!==== Remote Branches vs. Remote Tracking Branches ====
+
+<<<bilder/clone.pdf,width=\textwidth>>>
+
 !==== Fremden Code holen, eigenen versenden ====
 
 Aus einem anderen Repository neuen Code »ziehen«:
