@@ -536,6 +536,17 @@ julius@plenz.com
 
 * Teil I findet komplett ''lokal'' auf dem eigenen Rechner statt -- erst in Teil II nutzen wir die verteilten Eigenschaften von Git aus
 
+!==== Einen Commit ändern ====
+
+* Commit ändern = Neuen Commit erstellen, alten wegschmeißen
+* Den letzten Commit (@HEAD@) ändern:
+
+# @\$EDITOR ''datei''@
+# @git add ''datei''@
+# @git commit -{}-amend@
+
+* Tiefer liegende Commits (@HEAD\textasciitilde{}1@ etc.) können so nicht geändert werden!
+
 !==== Rebase: Auf eine neue Basis bauen ====
 
 * '''Rebase''': Einen Branch auf eine »neue Basis« stellen.
