@@ -547,18 +547,6 @@ julius@plenz.com
 
 * Tiefer liegende Commits (@HEAD\textasciitilde{}1@ etc.) können so nicht geändert werden!
 
-!==== Rebase: Auf eine neue Basis bauen ====
-
-* '''Rebase''': Einen Branch auf eine »neue Basis« stellen.
-<[block]{@master@ als neue Basis für @''topic''@}
-@git checkout ''topic''@ \\
-@git rebase master@
-[block]>
-
-<[block]{Alternativ}
-@git rebase master ''topic''@
-[block]>
-
 !==== Vor dem Rebase ====
 
 <[center]
@@ -575,15 +563,24 @@ julius@plenz.com
 
 * @git rebase master ''topic''@
 
-!==== Rebasing ====
+!==== Rebase: Auf eine neue Basis bauen ====
 
-* '''Rebase''': Einen Branch auf eine »neue Basis« stellen:
-** @git rebase master ''topic''@
+* '''Rebase''': Einen Branch auf eine »neue Basis« stellen.
+<[block]{@master@ als neue Basis für @''topic''@}
+@git checkout ''topic''@ \\
+@git rebase master@
+[block]>
+
+<[block]{Alternativ}
+@git rebase master ''topic''@
+[block]>
+
+!==== Rebasing: eine Warnung ====
 
 * _red_'''Wichtig:'''_ Man darf '''''niemals''''' Commits aus einem bereits veröffentlichten Branch -- auf dem also womöglich Andere ihre Arbeit basieren -- durch @git rebase@ verändern!
-** '''Daher: Nur Unveröffentlichtes gegen Veröffentlichtes rebasen:'''
-*** @git rebase origin/master@
-*** @git rebase v1.1.23@
+* '''Daher: Nur Unveröffentlichtes gegen Veröffentlichtes rebasen:'''
+** @git rebase origin/master@
+** @git rebase v1.1.23@
 
 !==== Rebase Interaktiv ====
 
