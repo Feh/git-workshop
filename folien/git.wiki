@@ -596,6 +596,17 @@ julius@plenz.com
 ** Typos aus den eigenen Commits entfernen
 ** Offensichtliche Fehler glattbügeln
 
+!==== Rebase Interaktiv: Beispiele ====
+
+<[block]{Zwei Commits zusammenfassen}
+@git rebase -i HEAD\textasciitilde{}''n''@\\
+$\rightarrow$ @edit@ des zweiten Commits durch @fixup@ ersetzen
+[block]>
+
+* Einen Commit verschieben: Die Zeilen vertauschen
+* Einen Commit editieren: mit @edit@ markieren
+* Einen Commit aufteilen: Siehe Cheatsheet
+
 !==== Hinaus in die weite Welt! ====
 
 * Wir wollen unsere Arbeit mit der anderer Entwickler austauschen!
