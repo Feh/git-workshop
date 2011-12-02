@@ -676,6 +676,19 @@ Eigene Commits »pushen« oder per E-Mail senden:
 * @git push ''remote'' ''branch''@
 * @git format-patch ''seit-wann''@
 
+!==== Konventionen ====
+
+* Wiederholter Einsatz von @git pull@ erzeugt viele unnötige Merges
+* Konvention:
+** Nicht im @master@ entwickeln
+** @git remote update@, @master@ ''immer'' Fast-Forwarden
+** Eigene Branches per @merge@ in @master@ integrieren
+
+<[block]{FF-Merge erzwingen}
+@git merge -{}-ff-only origin/master@\\
+@git config -{}-global alias.fm 'merge -{}-ff-only'@
+[block]>
+
 !==== GitHub -- „Social Coding“ ====
 
 * GitHub stellt Git-Repositories zur Verfügung
