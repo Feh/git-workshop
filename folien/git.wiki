@@ -727,7 +727,7 @@ Eigene Commits »pushen« oder per E-Mail senden:
 ** @git remote update@
 ** @gitk -{}-all@
 
-!==== Kür: Was noch fehlt ====
+==== Kür: Was noch fehlt ====
 
 * Rebase
 * @git stash@
