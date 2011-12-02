@@ -529,10 +529,10 @@ julius@plenz.com
 
 * Teil II:
 ** Die Geschichte umschreiben: Rebase
+** Einschub: Wunschkonzert -- was euch interessiert
 ** Verteiltes Git: Commits hoch- und runterladen
 ** Verschiedene Workflows
 ** Kollaboration live: Wir entwickeln gemeinsam ein Projekt
-** Oder: Wunschkonzert -- was euch interessiert
 
 * Teil I findet komplett ''lokal'' auf dem eigenen Rechner statt -- erst in Teil II nutzen wir die verteilten Eigenschaften von Git aus
 
