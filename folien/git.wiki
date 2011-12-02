@@ -705,6 +705,15 @@ Eigene Commits »pushen« oder per E-Mail senden:
 ** @git remote add ''github''@\\\qquad{}@ssh://git\@github.com:''user''/''projekt''.git@
 ** @git push ''github'' master@
 
+!==== Let's develop! ====
+
+* Wir entwickeln in Plaintext -- Markdown macht's schön!
+
+* Eine Hand voll Teams (5?)
+* Jedes Team wählt einen Koordinator
+* Koordinatoren arbeiten dem Maintainer zu
+* Entwickler: Tauscht euch aus! (Remotes, Patches, \ldots{})
+
 ==== Die Infrastruktur ====
 
 <[figure]
