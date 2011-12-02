@@ -580,14 +580,24 @@ julius@plenz.com
 * '''Rebase''': Einen Branch auf eine »neue Basis« stellen:
 ** @git rebase master ''topic''@
 
-* Interaktiv Commits neu ordnen, bearbeiten, zusammenfassen oder aufteilen:
-** @git rebase -i HEAD\~{}5@
-
 * _red_'''Wichtig:'''_ Man darf '''''niemals''''' Commits aus einem bereits veröffentlichten Branch -- auf dem also womöglich Andere ihre Arbeit basieren -- durch @git rebase@ verändern!
 ** '''Daher: Nur Unveröffentlichtes gegen Veröffentlichtes rebasen:'''
 *** @git rebase origin/master@
 *** @git rebase v1.1.23@
 
+!==== Rebase Interaktiv ====
+
+* Das ist ''Advanced Git Magic'' -- und will geübt sein!
+* Rebase-Prozess anhalten, Commits »mittendrin« ändern, weiterlaufen lassen
+
+<[block]{Interaktives Rebase}
+@git rebase -i master ''topic''@
+[block]>
+
+* Anwendungsfälle ''nur'' lokal und für die ''eigenen'' Commits
+** Patch-Serie neu strukturieren
+** Typos aus den eigenen Commits entfernen
+** Offensichtliche Fehler glattbügeln
 
 !==== Hinaus in die weite Welt! ====
 
