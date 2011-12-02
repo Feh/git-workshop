@@ -59,10 +59,10 @@ Wer hat schonmal ...
 ** Grundlegende Arbeitsschritte in Git
 ** Das Objektmodell -- eine theoretische Grundlage
 ** Parallele Entwicklung: Branches und Merges
-** Die Geschichte umschreiben: Rebase
 ** Entwicklung koordinieren: Ein Branching-Modell
 
 * Teil II:
+** Die Geschichte umschreiben: Rebase
 ** Verteiltes Git: Commits hoch- und runterladen
 ** Verschiedene Workflows
 ** Kollaboration live: Wir entwickeln gemeinsam ein Projekt
@@ -560,6 +560,23 @@ julius@plenz.com
         {\tiny \url{http://wiki.freitagsrunde.org/TechTalks}}} \\
     \end{tabular}
     \end{center}
+
+!==== Ablaufplan ====
+
+* Teil I:
+** Grundlegende Arbeitsschritte in Git
+** Das Objektmodell -- eine theoretische Grundlage
+** Parallele Entwicklung: Branches und Merges
+** Entwicklung koordinieren: Ein Branching-Modell
+
+* Teil II:
+** Die Geschichte umschreiben: Rebase
+** Verteiltes Git: Commits hoch- und runterladen
+** Verschiedene Workflows
+** Kollaboration live: Wir entwickeln gemeinsam ein Projekt
+** Oder: Wunschkonzert -- was euch interessiert
+
+* Teil I findet komplett ''lokal'' auf dem eigenen Rechner statt -- erst in Teil II nutzen wir die verteilten Eigenschaften von Git aus
 
 !==== Hinaus in die weite Welt! ====
 
