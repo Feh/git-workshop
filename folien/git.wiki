@@ -607,6 +607,18 @@ $\rightarrow$ @edit@ des zweiten Commits durch @fixup@ ersetzen
 * Einen Commit editieren: mit @edit@ markieren
 * Einen Commit aufteilen: Siehe Cheatsheet
 
+!==== Whitespace und EOL ====
+
+* Was ist kaputter Whitespace?
+* @git diff -{}-check@ (z.\,B. $\rightarrow$ Hook)
+
+* ''Zeilenende:'' Windows (CRLF) vs. UNIX (LF)
+* @core.eol@ bestimmt, was zu tun ist: @lf@, @crlf@ oder @native@
+* Git-Attribut @text@ für Dateien, die automatisch konvertiert werden sollen
+** @echo '*.c text' > .gitattributes@
+* @core.safecrlf@: Konvertierung verbieten, wenn ein Mix aus CRLF und LF vorhanden ist
+* Mehr Infos: @gitattributes(5)@
+
 !==== Hinaus in die weite Welt! ====
 
 * Wir wollen unsere Arbeit mit der anderer Entwickler austauschen!
